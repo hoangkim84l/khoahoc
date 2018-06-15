@@ -1,0 +1,27 @@
+#cus-content{
+	max-width: 100%;
+	max-height: auto;
+}
+#cus-content-left{
+	max-width: 38%;
+	margin: 20px;
+	float: left;
+}
+#cus-content-right{
+	max-width: 60%;
+	margin: 20px;
+	float: left;
+}
+.content-right{
+	max-width: 100%;
+	margin-bottom: 10px;
+}
+.img-avatar-left{
+	max-width: 38%;
+	max-height: 200px;
+	float: left;
+}
+.content-item-right{
+	max-width: 60%;
+	float: left;
+}
