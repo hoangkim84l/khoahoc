@@ -44,18 +44,18 @@
 			</ul>
 
 		</li>
-		<li class="product">
+		<!-- <li class="product">
 
 			<a href="" class="exp inactive">
 				<span>Nhà Phố</span>
 				<strong>1</strong>
 			</a>
 			<ul style="display: none;" class="sub">
-				<!-- <li>
+				< <li>
 					<a href="<?php echo admin_url('product')?>">
 						Tất cả sản phẩm
 					</a>
-				</li> -->
+				</li> >
 				<li>
 					<a href="<?php echo admin_url('sunhouse')?>">
 						Tất cả sản phẩm
@@ -63,7 +63,7 @@
 				</li>
 			</ul>
 
-		</li>
+		</li> -->
 		<li class="account">
 
 			<a href="" class="exp inactive">

@@ -1,41 +1,3 @@
-<!-- ********** Hero Area Start ********** -->
-<div class="hero-area height-600 bg-img background-overlay" style="background-image: url(<?php echo public_url()?>/site/img/blog-img/bg4.jpg);">
-    <div class="container h-100">
-        <div class="row h-100 align-items-center justify-content-center">
-            <div class="col-12 col-md-8 col-lg-6">
-                <div class="single-blog-title text-center">
-                    <h3><?php echo $info->name?></h3>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- ********** Hero Area End ********** -->
-
-<div class="main-content-wrapper section-padding-100">
-<div class="container">
-    <div class="row justify-content-center">
-        <!-- ============= Post Content Area ============= -->
-        <div class="col-12 col-lg-8">
-            <div class="single-blog-content mb-100">               
-                <!-- Post Content -->
-                <div class="post-content">
-                    <span><?php echo $info->info?></span>
-                    <!-- Post Tags -->
-                    <ul class="post-tags">
-                        <li><a href="#"><?php echo $info->meta_key?></a></li>
-                        <li><a href="#"><?php echo $info->meta_desc?></a></li>
-                    </ul>
-                    <!-- Post Meta -->
-                    <div class="post-meta second-part">
-                        <p><a href="#" class="post-author">Admin</a> on <a href="#" class="post-date"><?php echo mdate('%d-%m-%Y',$info->created)?> </a></p>
-                    </div>
-                </div>
-            </div>
-        </div>               
-    </div>
-</div>
-
 <!--SLIDER-->
 <div class="slider-inner" data-time="5000">
    <div class="title-page">
@@ -83,7 +45,7 @@
             <div class="scroll-slide">
                <div class="news-link center-no-paging">
                   <div class="link-page ">
-                     <a href="http://www.diaoctrananh.com/vi/co-hoi-nghe-nghiep/tuyen-chuyen-vien-phong-ho-so.html" data-details="recruitment-4" data-title="Trần Anh Group" data-description="Trần Anh Group" data-keyword="Trần Anh Group"></a>
+                     <!-- <a href="http://www.diaoctrananh.com/vi/co-hoi-nghe-nghiep/tuyen-chuyen-vien-phong-ho-so.html" data-details="recruitment-4" data-title="Trần Anh Group" data-description="Trần Anh Group" data-keyword="Trần Anh Group"></a> -->
                      <div class="link-text">
                         <h3>TUYỂN CHUYÊN VIÊN PHÒNG HỒ SƠ</h3>
                      </div>
@@ -93,7 +55,7 @@
          </div>
          <!--load-->
          <div class="news-bg ani-text">
-            <div class="news-load"></div>
+            <?php echo $info->info?>
          </div>
          <!--/load-->
       </div>

@@ -1,68 +1,3 @@
-<!-- ********** Hero Area Start ********** -->
-<div class="hero-area height-400 bg-img background-overlay" style="background-image: url(<?php echo public_url()?>/site/img/blog-img/bg4.jpg);"></div>
-    <!-- ********** Hero Area End ********** -->
-
-    <section class="contact-area section-padding-100">
-        <div class="container">
-            <div class="row justify-content-center">
-                <!-- Contact Form Area -->
-                <div class="col-12 col-md-12 col-lg-12">
-                    <div class="contact-form">
-                        <h5 id="cus-title-5">Thông tin liên hệ</h5>
-                        <!-- Contact Form -->
-                        <form action="" method="post">
-                            <div class="row">
-                                <div class="col-12 col-md-6">
-                                    <div class="group">
-                                        <input type="text" name="name" id="name" value="<?php echo set_value('name')?>" required>
-                                        <span class="highlight"></span>
-                                        <span class="bar"></span>
-                                        <label>Nhập tên của bạn</label>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <div class="group">
-                                        <input type="email" name="email" id="email" value="<?php echo set_value('email')?>" required>
-                                        <span class="highlight"></span>
-                                        <span class="bar"></span>
-                                        <label>Nhập email của bạn</label>
-                                    </div>
-								</div>
-								<div class="col-12 col-md-6">
-                                    <div class="group">
-                                        <input type="number" name="phone" id="phone" value="<?php echo set_value('phone')?>" required>
-                                        <span class="highlight"></span>
-                                        <span class="bar"></span>
-                                        <label>Số điện thoại</label>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <div class="group">
-                                        <input type="text" name="address" id="address" <?php echo set_value('address')?> required>
-                                        <span class="highlight"></span>
-                                        <span class="bar"></span>
-                                        <label>Địa chỉ</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="group">
-                                        <textarea name="content" id="content" required><?php echo set_value('content')?></textarea>
-                                        <span class="highlight"></span>
-                                        <span class="bar"></span>
-                                        <label>Nội dung liên hệ</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <button type="submit" class="btn world-btn">Send Message</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
 <!--SLIDER-->
 <div class="slider-inner" data-time="6000">
    <div class="title-page">
@@ -89,20 +24,20 @@
          <h3>TRẦN ANH GROUP</h3>
          <ul>
             <li class="bt-location">
-               <p>ẤP MỚI 2, XÃ MỸ HẠNH NAM, ĐỨC HÒA, LONG AN</p>
+               <p><?php echo $supports->address?></p>
             </li>
             <li class="bt-phone">
-               <p>0931 539 292</p>
+               <p><?php echo $supports->phone?></p>
             </li>
             <li class="bt-email">
-               <p><a href="mailto:cskh@diaoctrananh.com.vn">info@diaoctrananh.com.vn</a></p>
+               <p><a href="mailto:<?php echo $supports->gmail?>"><?php echo $supports->gmail?></a></p>
             </li>
          </ul>
       </div>
    </div>
    <div class="form-box ani-text">
       <h3>Mẫu thông tin liên hệ</h3>
-      <form onSubmit="return validatecontact();" id="frm_contact" name="frm_contact" method="post">
+      <form action="" id="frm_contact" name="frm_contact" method="post">
          <div class="require-col">
             <div class="input-text"><input id="name" name="name" value="HỌ VÀ TÊN (*)" type="text" data-holder="HỌ VÀ TÊN (*)"></div>
             <div class="input-text"><input id="address" name="address" value="ĐỊA CHỈ" type="text" data-holder="ĐỊA CHỈ"></div>

@@ -34,7 +34,7 @@
 	<meta itemprop="description" content="Trần Anh Group">
 	<meta itemprop="image" content="<?php echo public_url()?>/site/images/social-share.png">
 
-	<link rel="icon" href="<?php echo public_url()?>/site/images/favicon.png">
+	<link rel="icon" href="http://www.diaoctrananh.com/catalog/view/theme/default/images/favicon.png">
 	<link href="<?php echo public_url()?>/site/stylesheets/fonts.css" rel="stylesheet" type="text/css">
 	<link href="<?php echo public_url()?>/site/stylesheets/animation.css" rel="stylesheet" type="text/css">
 	<link href="<?php echo public_url()?>/site/stylesheets/style.css" rel="stylesheet" type="text/css">

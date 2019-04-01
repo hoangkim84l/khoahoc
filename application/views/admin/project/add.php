@@ -68,7 +68,7 @@
                </div>
                <div class="tab_content pd0" id="tab2" style="display: none;">
                   <div class="formRow">
-                     <label for="param_meta_desc" class="formLeft">Meta description:</label>
+                     <label for="param_meta_desc" class="formLeft">Mô tả ngắn:</label>
                      <div class="formRight">
                         <span class="oneTwo"><textarea cols="" rows="4" _autocheck="true" id="param_meta_desc" name="meta_desc"></textarea></span>
                         <span class="autocheck" name="meta_desc_autocheck"></span>
