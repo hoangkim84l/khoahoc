@@ -90,4 +90,38 @@
 	<script type="text/javascript" src="<?php echo public_url()?>/site/scripts/contact.js"></script>
 
 	<script type="text/javascript" src="<?php echo public_url()?>site/scripts/btq.js"></script>
+	<script type="text/javascript">
+		if(window.location.pathname === "/du-an.html"){
+			$(".project").addClass("current");
+		}
+		if(window.location.pathname === "/thong-tin-ve-chung-toi.html"){
+			$(".introduce").addClass("current");
+		}
+		if(window.location.pathname === "/cong-ty-thanh-vien.html"){
+			$(".member").addClass("current");
+		}
+		if(window.location.pathname === "/san-giao-dich.html"){
+			$(".place").addClass("current");
+		}
+		if(window.location.pathname === "/dinh-huong-phat-trien.html"){
+			$(".develop").addClass("current");
+		}
+		if(window.location.pathname === "/tuyen-dung.html"){
+			$(".tuyendung").addClass("current");
+		}
+		if(window.location.pathname === "/bai-viet-hay.html"){
+			$(".news").addClass("current");
+		}
+		if(window.location.pathname === "/lien-he.html"){
+			$(".contact").addClass("current");
+		}
+		var pathArray = window.location.pathname.split('/');
+		var secondLevelLocation = pathArray[1];
+		if(secondLevelLocation === "bai-viet"){
+			$(".news").addClass("current");
+		}
+		if(secondLevelLocation === "du-an"){
+			$(".project").addClass("current");
+		}
+	</script>
 </html>
