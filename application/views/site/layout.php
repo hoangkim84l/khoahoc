@@ -47,7 +47,10 @@
 				<h3><span>CÔNG TY CP BẤT ĐỘNG SẢN</span> TRẦN ANH LONG AN</h3>
 				<p>Tên viết tắt : <strong>TRẦN ANH GROUP</strong></p>
 				<ul>
-				<li class="bt-location"><p><?php echo $supports->address?></p></li><li class="bt-phone"><p><?php echo $supports->phone?></p></li><li class="bt-email"><p><a href="mailto:<?php echo $supports->gmail?>"><?php echo $supports->gmail?></a></p></li></ul>
+				<li class="bt-location"><p><?php echo $supports->address?></p></li>
+				<li class="bt-phone"><p>Hotline : <?php echo $supports->phone?></p></li>
+				<li class="bt-phone"><p>Zalo : <?php echo $supports->skype?></p></li>	
+				<li class="bt-email"><p><a href="mailto:<?php echo $supports->gmail?>"><?php echo $supports->gmail?></a></p></li></ul>
 				<!--SOCIAL-->
 				<ul class="social">
 				<li><a class="facebook" href="https://www.facebook.com/" target="_blank">facebook</a></li>

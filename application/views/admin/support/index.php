@@ -22,7 +22,7 @@
 					<td class="sortCol"><?php echo lang('phone'); ?></td>
 					<td class="sortCol">SEO Key</td>
 					<td class="sortCol"><?php echo lang('email'); ?></td>
-					<td class="sortCol"><?php echo lang('skype'); ?></td>
+					<td class="sortCol">Zalo</td>
 					
 					<td style="width:100px;"><?php echo lang('action'); ?></td>
 				</tr>

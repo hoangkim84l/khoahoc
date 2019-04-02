@@ -61,14 +61,14 @@
                      <h3>Công ty CP HỒNG ĐẠT LONG AN</h3>
                      <div class="companies-info">
                         <p><strong>BRIEF: Hong Dat Long An JSC</strong><br><strong>HOẠT ĐỘNG CHÍNH:</strong><br>- Xây dựng công trình công ích.<br>- Xây dựng công trình kỹ thuật dân dụng khác.<br>- Chuẩn bị mặt bằng.<br>- Bán buôn vật liệu, thiết bị lắp đặt khác trong xây dựng.<br>- Kinh doanh bất động sản, quyền sử dụng đất thuộc chủ sở hữu, chủ sử dụng hoặc đi thuê.</p>
-                        <p><strong>LIÊN HỆ:</strong><br>- Điện thoại: 02723.751.292<br>- Địa chỉ: Ấp mới 2 – xã Mỹ Hạnh Nam – huyện Đức Hòa – tỉnh Long An.</p>
+                        <p><strong>LIÊN HỆ:</strong><br>- Địa chỉ: Ấp mới 2 – xã Mỹ Hạnh Nam – huyện Đức Hòa – tỉnh Long An.</p>
                      </div>
                   </div>
                   <div class="companies-item">
                      <h3>CÔNG TY TNHH MTV TRẦN ANH ĐỨC HÒA</h3>
                      <div class="companies-info">
                         <p><strong>BRIEF: Tran Anh Duc Hoa Co.,Ltd</strong><br><strong>HOẠT ĐỘNG CHÍNH:</strong><br>- Kinh doanh bất động sản.<br>- Quyền sử dụng đất thuộc chủ sở hữu, chủ sử dụng hoặc đi thuê.</p>
-                        <p><strong>LIÊN HỆ:</strong><br>- Điện thoại: 02723.751.945<br>- Địa chỉ: Ấp mới 2 – xã Mỹ Hạnh Nam – huyện Đức Hòa – tỉnh Long An</p>
+                        <p><strong>LIÊN HỆ:</strong><br>- Địa chỉ: Ấp mới 2 – xã Mỹ Hạnh Nam – huyện Đức Hòa – tỉnh Long An</p>
                      </div>
                   </div>
                </div>
@@ -91,23 +91,7 @@
             <h3>Định hướng phát triển</h3>
             <p>+ Đảm bảo đáp ứng tất cả các nhu cầu của khách hàng ở mọi nơi vào bất kỳ lúc nào.<br>+ Đảm bảo chất lượng công trình tốt nhất.</p>
          </div>
-         <div class="companies ani-text">
-            <div class="companies-bg" style="background-image:url(http://www.diaoctrananh.com/pictures/catalog/members/bg2.jpg)"></div>
-            <div class="companies-title">
-               <h2>Đối tác</h2>
-            </div>
-            <div class="companies-box">
-               <div class="companies-slider center-no-paging">
-                  <div class="companies-item">
-                     <h3>CÔNG TY TNHH ĐẦU TƯ XD VÀ SAN LẮP THUẬN PHÁT</h3>
-                     <div class="companies-info">
-                        <p><strong>BRIEF: Thuan Phat Investment Construction and Installation Co.,Ltd</strong><br><strong>HOẠT ĐỘNG CHÍNH:</strong><br>- Kinh doanh bất động sản, quyền sử dụng đất thuộc chủ sở hữu, chủ sử dụng hoặc đi thuê.<br>- Xây dựng công trình kỹ thuật dân dụng khác.<br>- Chuẩn bị mặt bằng.<br>- Hoạt động thiết kế chuyên dụng.<br>- Bán buôn vật liệu, thiết bị lắp đặt khác trong xây dựng.<br>- Sản xuất vật liệu xây dựng từ đất sét.<br>- Vệ sinh nhà cửa và các công trình khác.<br>- Xây dựng nhà các loại.</p>
-                        <p><strong>LIÊN HỆ:</strong><br>- Điện thoại: 02723.751.292<br>- Địa chỉ: Ấp mới 2 – xã Mỹ Hạnh Nam – huyện Đức Hòa – tỉnh Long An.</p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
+         
       </div>
       <div class="member-box set-post" data-post="03">
          <div class="title">

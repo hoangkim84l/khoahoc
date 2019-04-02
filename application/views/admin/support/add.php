@@ -54,7 +54,7 @@
 				</div>
 				
 				<div class="formRow">
-					<label class="formLeft" for="param_skype"><?php echo lang('skype'); ?>:</label>
+					<label class="formLeft" for="param_skype">Zalo:</label>
 					<div class="formRight">
 						<span class="oneTwo"><input name="skype" id="param_skype" value="" type="text"/></span>
 						<span name="skype_autocheck" class="autocheck"></span>
