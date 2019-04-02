@@ -47,7 +47,7 @@
 				<h3><span>CÔNG TY CP BẤT ĐỘNG SẢN</span> TRẦN ANH LONG AN</h3>
 				<p>Tên viết tắt : <strong>TRẦN ANH GROUP</strong></p>
 				<ul>
-				<li class="bt-location"><p>ẤP MỚI 2, XÃ MỸ HẠNH NAM, ĐỨC HÒA, LONG AN</p></li><li class="bt-phone"><p>0931 539 292</p></li><li class="bt-email"><p><a href="mailto:cskh@diaoctrananh.com.vn">info@diaoctrananh.com.vn</a></p></li></ul>
+				<li class="bt-location"><p><?php echo $supports->address?></p></li><li class="bt-phone"><p><?php echo $supports->phone?></p></li><li class="bt-email"><p><a href="mailto:<?php echo $supports->gmail?>"><?php echo $supports->gmail?></a></p></li></ul>
 				<!--SOCIAL-->
 				<ul class="social">
 				<li><a class="facebook" href="https://www.facebook.com/" target="_blank">facebook</a></li>

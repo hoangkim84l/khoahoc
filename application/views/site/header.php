@@ -9,22 +9,19 @@
 <a href="javascript:void(0);" class="search"><span></span></a>
 <div class="search-form">
    <div class="form-row-search">
-      <form  onsubmit="return false;" action="tim-kiem.html" id="search" method="get">
-         <input id="qsearch" type="text" class="search-field" data-holder="Tìm kiếm..." value="Tìm kiếm..." data-default="Tìm kiếm..."  />
-         <input id="defaultvalue" type="hidden" class="search-field" value="Tìm kiếm...">
-         <input id="errorsearch" type="hidden" class="search-field" value="Từ khóa không được dưới 2 kí tự, vui lòng nhập lại từ khóa tìm kiếm!">
-         <input type="hidden" id="href_search" value="tim-kiem.html" />
+      <form action="<?php echo site_url('project/search')?>" id="search" method="get">
+         <input autocomplete="off" id="qsearch" type="text" class="search-field" data-holder="Tìm kiếm..." value="<?php echo isset($key) ? $key : ''?>" name="key-search" data-default="Tìm kiếm..."  />
       </form>
    </div>
 </div>
 <!--SEARCH-->
-<div class="language">
+<!-- <div class="language">
    <form id="change_lang" enctype="multipart/form-data" method="post" action="http://www.diaoctrananh.com/index.php?route=common/home">
       <a href="javascript:void(0);" onClick="$('input[name=\'language_code\']').attr('value', 'en').submit();$('input[name=\'redirect\']').attr('value', 'http://www.diaoctrananh.com/en/').submit();$('#change_lang').submit();return false;">en</a>
       <input type="hidden" value="" name="language_code" />
       <input id="changlanguage_redirect" type="hidden" value="http://www.diaoctrananh.com/" name="redirect" />
    </form>
-</div>
+</div> -->
 <!--menu-->
 <nav>
    <div class="navigation">

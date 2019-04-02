@@ -1,65 +1,66 @@
-<!-- ********** Hero Area Start ********** -->
-<div class="hero-area height-600 bg-img background-overlay" style="background-image: url(<?php echo public_url()?>/site/img/blog-img/bg4.jpg);height: 150px !important;">
-    <div class="container h-100">
-        <span>Kết quả tìm kiếm Từ khóa "<?php echo $key?>"</span>
-    </div>
+<!--SLIDER-->
+<div class="slider-inner" data-time="3000">
+   <div class="title-page">
+      <h1>Tìm kiếm</h1>
+   </div>
+   <div class="slide-bg">
+      <div class="pagination"></div>
+      <div class="item-wrapper">
+         <div class="item-container">
+            <div class="bg-inner" style="background-image:url(http://www.diaoctrananh.com/pictures/catalog/background/bg4.jpg)"></div>
+         </div>
+      </div>
+   </div>
 </div>
-<div class="main-content-wrapper section-padding-100">
-        <div class="container">
-            <div class="row justify-content-center">
-                <!-- ============= Post Content Area Start ============= -->
-                <div class="col-12 col-lg-12">
-                    <div class="post-content-area mb-50">
-                        <div class="world-catagory-area mt-50">
-                            <ul class="nav nav-tabs" id="myTab2" role="tablist">
-                                <li class="title">Dự Án</li>
-                            </ul>
-
-                            <div class="tab-content" id="myTabContent2">
-
-                                <div class="tab-pane fade show active" id="world-tab-10" role="tabpanel" aria-labelledby="tab10">
-                                    <div class="row">
-                                    <?php if(empty($list)):?>
-                                            <h2 style='text-align:center'>Chưa có bài viết nào</h2>
-                                        <?php else:?>
-                                        <?php foreach($list as $project):?>
-                                            <div class="col-md-4">
-                                                <!-- Single Blog Post -->
-                                                    <div class="single-blog-post wow fadeInUpBig" data-wow-delay="0.2s" style="height:380px;">
-                                                        <!-- Post Thumbnail -->
-                                                        <div class="post-thumbnail">
-                                                            <img src="<?php echo base_url('upload/project/'.$project->image_link)?>" alt="<?php echo $project->meta_desc;?>" title="<?php echo $project->meta_key;?>" style="height:190 !important;width:350px !important;">
-                                                        </div>
-                                                        <!-- Post Content -->
-                                                        <div class="post-content">
-                                                            <a href="<?=site_url('du-an/chi-tiet/'.$project->slug_title.'-'.$project->id)?>" class="headline">
-                                                                <h5 style="overflow: hidden;
-                                                                            text-overflow: ellipsis;
-                                                                            white-space: pre;
-                                                                            width:100%;
-                                                                            "><?php echo $project->title;?></h5>
-                                                            </a>
-                                                            <div style="overflow: hidden;
-                                                                        text-overflow: ellipsis;
-                                                                        white-space: pre;
-                                                                        width:100%;
-                                                                        height:50px;
-                                                                        "><?php echo $project->content?></div>
-                                                            <!-- Post Meta -->
-                                                            <div class="post-meta">
-                                                                <p><a href="#">Nguồn : <?php echo $project->author;?> </a> <a href="#" class="post-date"> <?php echo mdate('%d-%m-%Y',$project->created)?></a></p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            <?php endforeach;?> 
-                                            <?php endif;?>                                       
-                                    </div>                                       
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<!--SLIDER-->
+<!--CONTENT-->
+<section class="about-content">
+   <div class="about-box message set-post" data-post="01">
+      <div class="title">
+         <h2>Kết quả tìm kiếm "<?php echo $key?>"</h2>
+      </div>
+      <div class="message-box">
+         <div class="message-col">
+            <div class="message-text">
+               <table class="agent search-result">
+                  <tbody>
+                     <tr>
+                      <?php if(empty($list)):?>
+                        <td class="t-text no-result">Không tìm thấy kết quả thỏa giá trị tìm kiếm.</td>
+                       <?php endif;?> 
+                     </tr>
+                  </tbody>
+               </table>
             </div>
+         </div>
+      </div>
+   </div>
+</section>
+<!--CONTENT-->
+<section class="projects">
+    <?php if(empty($list)):?>
+      <h2 style='text-align:center'>...</h2>
+    <?php else:?>
+    <?php $i=1; foreach($list as $project):?>
+     <div class="project-item ani-text">
+        <span class="project-bg"></span>
+        <div class="project-title">
+           <span>Khu dự án</span>
+           <h3><strong><?php echo $project->title;?></strong></h3>
+           <span class="project-num"><?php echo $i++; ?></span>
         </div>
-    </div>    
-</div>
+        <div class="project-box">
+           <div class="project-pic">
+              <div class="bg-cover"><img src="<?php echo base_url('upload/project/'.$project->image_link)?>" alt="<?php echo $project->meta_key;?>"></div>
+           </div>
+           <div class="project-text">
+              <p><?php echo $project->meta_desc;?>.</p>
+           </div>
+           <div class="project-but"><a href="<?=site_url('du-an/chi-tiet/'.$project->slug_title.'-'.$project->id)?>"><span></span>Xem Chi Tiết</a></div>
+        </div>
+     </div>
+    <?php endforeach;?> 
+    <?php endif;?>  
+    
+</section>
+<!--CONTENT-->
