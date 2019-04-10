@@ -86,6 +86,11 @@ Class Product extends MY_Controller
      */
     function add()
     {
+        $config = array(
+            'field' => 'slug_name',
+            'name'  => 'name',
+            'table' => 'product',
+        );
         //lay danh sach danh muc san pham
         $this->load->model('catalog_model');
         $input = array();
@@ -101,6 +106,7 @@ Class Product extends MY_Controller
         
         //load thư viện validate dữ liệu
         $this->load->library('form_validation');
+        $this->load->library('slug_library',$config);
         $this->load->helper('form');
         
         //neu ma co du lieu post len thi kiem tra
@@ -154,6 +160,7 @@ Class Product extends MY_Controller
                     'content'    => $this->input->post('content'),
                     'created'    => now(),
                 ); 
+                $data['slug_name'] = $this->slug_library->create_uri($name);
                 //them moi vao csdl
                 if($this->product_model->create($data))
                 {
@@ -178,6 +185,11 @@ Class Product extends MY_Controller
      */
     function edit()
     {
+        $config = array(
+            'field' => 'slug_name',
+            'name'  => 'name',
+            'table' => 'product',
+        );
         $id = $this->uri->rsegment('3');
         $product = $this->product_model->get_info($id);
         if(!$product)
@@ -203,6 +215,7 @@ Class Product extends MY_Controller
         
         //load thư viện validate dữ liệu
         $this->load->library('form_validation');
+        $this->load->library('slug_library',$config);
         $this->load->helper('form');
         
         //neu ma co du lieu post len thi kiem tra
@@ -238,7 +251,6 @@ Class Product extends MY_Controller
                 $image_list = array();
                 $image_list = $this->upload_library->upload_file($upload_path, 'image_list');
                 $image_list_json = json_encode($image_list);
-        
                 //luu du lieu can them
                 $data = array(
                     'name'       => $name,
@@ -252,6 +264,7 @@ Class Product extends MY_Controller
                     'meta_key'   => $this->input->post('meta_key'),
                     'content'    => $this->input->post('content'),
                 );
+                $data['slug_name'] = $this->slug_library->create_uri($name);
                 if($image_link != '')
                 {
                     $data['image_link'] = $image_link;

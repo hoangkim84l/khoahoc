@@ -14,10 +14,10 @@
 <div class="wrapper">
 	
 	<div class="widgets">
-	     <!-- Stats -->
+		<!-- Stats -->
 		<?php $this->load->view('admin/home/stats', $this->data); ?>
 		<div class="clear"></div>
-    </div>
+	</div>
 	
 </div>
 

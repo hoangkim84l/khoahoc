@@ -83,7 +83,7 @@ Class Catalog extends MY_Controller
         //load thư viện validate dữ liệu
         $this->load->library('form_validation');
         $this->load->helper('form');
-    
+        
         //lay id danh mục
         $id = $this->uri->rsegment(3);
         $info = $this->catalog_model->get_info($id);
@@ -99,7 +99,7 @@ Class Catalog extends MY_Controller
         if($this->input->post())
         {
             $this->form_validation->set_rules('name', 'Tên', 'required');
-    
+            
             //nhập liệu chính xác
             if($this->form_validation->run())
             {
@@ -107,7 +107,7 @@ Class Catalog extends MY_Controller
                 $name       = $this->input->post('name');
                 $parent_id  = $this->input->post('parent_id');
                 $sort_order = $this->input->post('sort_order');
-    
+                
                 //luu du lieu can them
                 $data = array(
                     'name'      => $name,
@@ -126,13 +126,13 @@ Class Catalog extends MY_Controller
                 redirect(admin_url('catalog'));
             }
         }
-    
+        
         //lay danh sach danh muc cha
         $input = array();
         $input['where'] = array('parent_id' => 0);
         $list = $this->catalog_model->get_list($input);
         $this->data['list']  = $list;
-    
+        
         $this->data['temp'] = 'admin/catalog/edit';
         $this->load->view('admin/main', $this->data);
     }

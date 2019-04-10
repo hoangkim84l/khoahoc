@@ -46,24 +46,16 @@
                      </div>
                      <div class="clear"></div>
                   </div>
-				  <div class="formRow">
-                     <label for="param_name" class="formLeft">Nguồn bài viết</label>
-                     <div class="formRight">
-                        <span class="oneTwo"><input type="text" _autocheck="true" id="param_author" value="<?php echo $news->author?>" name="author"></span>
-                        
-                     </div>
-                     <div class="clear"></div>
-                  </div>
                   <div class="formRow">
-                    <label for="param_warranty" class="formLeft">		Ra trang chủ :	</label>	
-                    <div class="formRight">
-                        <span class="oneFour">
+                   <label for="param_warranty" class="formLeft">		Ra trang chủ :	</label>	
+                   <div class="formRight">
+                     <span class="oneFour">
                         <input type="radio" name="is_home" value="0" <?php if ($news->is_home == 0) { echo "checked"; } ?>> Có <br/> 								
                         <input type="radio" name="is_home" value="1" <?php if ($news->is_home == 1) { echo "checked"; } ?>> Không</span>		<span class="autocheck" name="warranty_autocheck"></span>		
                         <div class="clear error" name="warranty_error"></div>
-                    </div>
-                    <div class="clear"></div>
-                    </div>
+                     </div>
+                     <div class="clear"></div>
+                  </div>
                   <div class="formRow hide"></div>
                </div>
                <div class="tab_content pd0" id="tab2" style="display: none;">

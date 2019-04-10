@@ -12,23 +12,23 @@
 				
 				<tr>
 					<td>
-						<div class="left">Tổng số Dự án</div>
-						<div class="right f11"><a href="<?php echo admin_url('project')?>"><?php echo lang("detail"); ?></a></div>
+						<div class="left">Tổng số sản phẩm</div>
+						<div class="right f11"><a href="<?php echo admin_url('product')?>"><?php echo lang("detail"); ?></a></div>
 					</td>
 					
 					<td class="textC webStatsLink">
-						<?php echo number_format($total_project)?>
+						<?php echo number_format($total_product)?>
 					</td>
 				</tr>
 				
 				<tr>
 					<td>
-						<div class="left">Tổng số Nhà phố</div>
-						<div class="right f11"><a href="<?php echo admin_url('sunhouse')?>"><?php echo lang("detail"); ?></a></div>
+						<div class="left">Tổng số dịch vụ</div>
+						<div class="right f11"><a href="<?php echo admin_url('service')?>"><?php echo lang("detail"); ?></a></div>
 					</td>
 					
 					<td class="textC webStatsLink">
-						<?php echo number_format($total_sunhouse)?>
+						<?php echo number_format($total_service)?>
 					</td>
 				</tr>
 				

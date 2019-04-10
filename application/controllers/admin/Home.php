@@ -11,8 +11,7 @@ Class Home extends MY_Controller
         $this->load->model('news_model');
         $this->load->model('product_model');
         $this->load->model('contact_model');
-        $this->load->model('project_model');
-        $this->load->model('sunhouse_model');
+        $this->load->model('service_model');
         
         //thong ke doanh thu ngay hom nay
         $today = get_date(now());
@@ -46,8 +45,7 @@ Class Home extends MY_Controller
         $this->data['total_user']    = $this->user_model->get_total();
         $this->data['total_news']    = $this->news_model->get_total();
         $this->data['total_contact'] = $this->contact_model->get_total();
-        $this->data['total_sunhouse'] = $this->sunhouse_model->get_total();
-        $this->data['total_project'] = $this->project_model->get_total();
+        $this->data['total_service'] = $this->service_model->get_total();
         
         $this->lang->load('admin/home');
         

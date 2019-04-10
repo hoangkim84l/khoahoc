@@ -60,9 +60,9 @@
 					<td><?php echo $row->sort_order?></td>
 					
 					<td class="option textC">
-						 <a title="Xem chi tiết link" class="tipS" target="_blank" href="<?php echo $row->link?>">
+						<!--  <a title="Xem chi tiết link" class="tipS" target="_blank" href="<?php echo $row->link?>">
 								<img src="<?php echo public_url('admin/images')?>/icons/color/view.png">
-						 </a>
+						 </a> -->
 						 
 						 <a class="tipS" title="Chỉnh sửa" href="<?php echo admin_url('slide/edit/'.$row->id)?>">
 							<img src="<?php echo public_url('admin/images')?>/icons/color/edit.png">

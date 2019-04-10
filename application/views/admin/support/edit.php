@@ -34,7 +34,7 @@
 				</div>
 				
 				<div class="formRow">
-					<label class="formLeft" for="param_facebook"><?php echo lang('facebook'); ?>:</label>
+					<label class="formLeft" for="param_facebook">Facebook:</label>
 					<div class="formRight">
 						<span class="oneTwo"><input name="facebook" id="param_facebook" value='<?php echo $info->facebook?>'  type="text" /></span>
 						<span name="facebook_autocheck" class="autocheck"></span>
@@ -44,7 +44,7 @@
 				</div>
 				
 				<div class="formRow">
-					<label class="formLeft" for="param_gmail"><?php echo lang('email'); ?>:</label>
+					<label class="formLeft" for="param_gmail"><?php echo lang('email'); ?>:<span class="req">*</span></label>
 					<div class="formRight">
 						<span class="oneTwo"><input name="gmail" id="param_gmail" value='<?php echo $info->gmail?>'  type="text" /></span>
 						<span name="gmail_autocheck" class="autocheck"></span>
@@ -56,7 +56,7 @@
 				<div class="formRow">
 					<label class="formLeft" for="param_skype">Zalo:</label>
 					<div class="formRight">
-						<span class="oneTwo"><input name="skype" id="param_skype" value='<?php echo $info->skype?>'  type="text" /></span>
+						<span class="oneTwo"><input name="zalo" id="param_skype" value='<?php echo $info->zalo?>'  type="text" /></span>
 						<span name="skype_autocheck" class="autocheck"></span>
 						<div name="skype_error" class="clear error"></div>
 					</div>
@@ -66,7 +66,7 @@
 				<div class="formRow">
 					<label class="formLeft" for="param_sort_order">Hotline :</label>
 					<div class="formRight">
-						<input name="hotline" id="param_sort_order"  class="left" value='<?php echo $info->hotline?>'  type="text" />
+						<span class="oneTwo"><input name="hotline" id="param_sort_order" value='<?php echo $info->hotline?>'  type="text" /></span>
 						<span name="sort_order_autocheck" class="autocheck"></span>
 						<div name="sort_order_error" class="clear error"></div>
 					</div>
@@ -76,17 +76,7 @@
 				<div class="formRow">
 					<label class="formLeft" for="param_sort_order">Địa chỉ :</label>
 					<div class="formRight">
-						<input name="address" id="param_sort_order"  class="left" value='<?php echo $info->address?>'  type="text" />
-						<span name="sort_order_autocheck" class="autocheck"></span>
-						<div name="sort_order_error" class="clear error"></div>
-					</div>
-					<div class="clear"></div>
-				</div>
-
-				<div class="formRow">
-					<label class="formLeft" for="param_sort_order">Giới thiệu :</label>
-					<div class="formRight">
-						<textarea name="introduce"><?php echo $info->introduce?></textarea>
+						<span class="oneTwo"><input name="address" id="param_sort_order"  class="left" value='<?php echo $info->address?>'  type="text" /></span>
 						<span name="sort_order_autocheck" class="autocheck"></span>
 						<div name="sort_order_error" class="clear error"></div>
 					</div>
@@ -118,7 +108,7 @@
                      <div class="formRight">
                         <div class="left">
                            <input type="file" name="image" id="image" size="25">
-                           <img src="<?php echo base_url('upload/logo/'.$info->image)?>" style="width:100px;height:70px">
+                           <img src="<?php echo base_url('upload/logo/'.$info->image_link)?>" style="width:100px;height:70px">
                         </div>
                         <div class="clear error" name="image_error"></div>
                      </div>

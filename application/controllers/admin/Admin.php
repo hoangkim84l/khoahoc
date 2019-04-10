@@ -112,8 +112,8 @@ Class Admin extends MY_Controller
         
         if($this->input->post())
         {
-            $this->form_validation->set_rules('name', 'Tên', 'required|min_length[8]');
-            $this->form_validation->set_rules('username', 'Tài khoản đăng nhập', 'required|callback_check_username');
+            // $this->form_validation->set_rules('name', 'Tên', 'required|min_length[8]');
+            // $this->form_validation->set_rules('username', 'Tài khoản đăng nhập', 'required|callback_check_username');
             
             $password = $this->input->post('password');
             if($password)

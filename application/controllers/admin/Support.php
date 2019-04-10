@@ -116,17 +116,17 @@ class Support extends MY_Controller {
             $data['phone']      = $this->input->post('phone');
             $data['facebook']      = $this->input->post('facebook');
             $data['gmail']      = $this->input->post('gmail');
-            $data['skype']      = $this->input->post('skype');
+            $data['zalo']      = $this->input->post('zalo');
             
 			$data['hotline']    = $this->input->post('hotline');
 			$data['address']    = $this->input->post('address');
-			$data['introduce']  = $this->input->post('introduce');
+			
 			$data['meta_key']   = $this->input->post('meta_key');
 			$data['meta_desc']  = $this->input->post('meta_desc');
 
 			if($image != '')
                 {
-                    $data['image'] = $image;
+                    $data['image_link'] = $image;
 				}
 				
             if($this->support_model->update($id, $data))

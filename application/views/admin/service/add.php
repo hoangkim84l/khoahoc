@@ -1,14 +1,14 @@
 <!-- head -->
-<?php $this->load->view('admin/news/head', $this->data)?>
+<?php $this->load->view('admin/service/head', $this->data)?>
 <div class="line"></div>
 <div class="wrapper">
    <!-- Form -->
-   <form enctype="multipart/form-data" method="post" action="<?php echo admin_url('news/add')?>" id="form" class="form">
+   <form enctype="multipart/form-data" method="post" action="<?php echo admin_url('service/add')?>" id="form" class="form">
       <fieldset>
          <div class="widget">
             <div class="title">
                <img class="titleIcon" src="<?php echo public_url('admin')?>/images/icons/dark/add.png">
-               <h6>Thêm mới bài viết</h6>
+               <h6>Thêm mới dự án</h6>
             </div>
             <ul class="tabs">
                <li class="activeTab"><a href="#tab1">Thông tin chung</a></li>
@@ -27,7 +27,7 @@
                      <div class="clear"></div>
                   </div>
                   <div class="formRow">
-                     <label for="param_name" class="formLeft">Giới thiệu</label>
+                     <label for="param_name" class="formLeft">Giới thiệu:</label>
                      <div class="formRight">
                         <span class="oneTwo"><input type="text" _autocheck="true" id="param_title" name="intro"></span>
                         <span class="autocheck" name="name_autocheck"></span>
@@ -60,7 +60,7 @@
             </div>
             <div class="tab_content pd0" id="tab2" style="display: none;">
                <div class="formRow">
-                  <label for="param_meta_desc" class="formLeft">Meta description:</label>
+                  <label for="param_meta_desc" class="formLeft">Mô tả ngắn:</label>
                   <div class="formRight">
                      <span class="oneTwo"><textarea cols="" rows="4" _autocheck="true" id="param_meta_desc" name="meta_desc"></textarea></span>
                      <span class="autocheck" name="meta_desc_autocheck"></span>

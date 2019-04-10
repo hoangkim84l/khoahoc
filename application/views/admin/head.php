@@ -1,6 +1,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-<title>Quản trị Bất Động Sản Lên Phạm</title>
+<title>Site quản trị hệ thống</title>
 
 <meta name="robots" content="noindex, nofollow" />
 
@@ -44,7 +44,7 @@
 
 <script type="text/javascript" src="<?php echo public_url()?>/js/ckeditor/ckeditor.js"></script> 
 <script type="text/javascript" src="<?php echo public_url()?>/js/ckfinder/ckfinder.js"></script> 
- 
+
 <script type="text/javascript" src="<?php echo public_url()?>/js/jquery/chosen/chosen.jquery.min.js"></script>
 <script type="text/javascript" src="<?php echo public_url()?>/js/jquery/scrollTo/jquery.scrollTo.js"></script>
 <script type="text/javascript" src="<?php echo public_url()?>/js/jquery/number/jquery.number.min.js"></script>

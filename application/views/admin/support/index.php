@@ -42,7 +42,7 @@
 					
 					<td><?php echo $row->gmail; ?></td>
 					
-					<td><?php echo $row->skype; ?></td>
+					<td><?php echo $row->zalo; ?></td>
 					
 					<td class="option">
 						

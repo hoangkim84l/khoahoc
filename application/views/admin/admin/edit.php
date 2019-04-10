@@ -12,9 +12,9 @@
       <form id="form" class="form" enctype="multipart/form-data" method="post" action="">
           <fieldset>
                 <div class="formRow">
-                	<label for="param_name" class="formLeft">Tên:<span class="req">*</span></label>
+                	<label for="param_name" class="formLeft">Tên:<span class="req"></span></label>
                 	<div class="formRight">
-                		<span class="oneTwo"><input type="text" _autocheck="true" id="param_name" value="<?php echo $info->name?>" name="name"></span>
+                		<span class="oneTwo"><input type="text" _autocheck="true" id="param_name" readonly="true" value="<?php echo $info->name?>" name="name"></span>
                 		<span class="autocheck" name="name_autocheck"></span>
                 		<div class="clear error" name="name_error"><?php echo form_error('name')?></div>
                 	</div>
@@ -22,9 +22,9 @@
                 </div>
                 
                  <div class="formRow">
-                	<label for="param_username" class="formLeft">Username:<span class="req">*</span></label>
+                	<label for="param_username" class="formLeft">Username:<span class="req"></span></label>
                 	<div class="formRight">
-                		<span class="oneTwo"><input type="text" _autocheck="true" value="<?php echo $info->username?>" id="param_username" name="username"></span>
+                		<span class="oneTwo"><input type="text" _autocheck="true" readonly="true" value="<?php echo $info->username?>" id="param_username" name="username"></span>
                 		<span class="autocheck" name="name_autocheck"></span>
                 		<div class="clear error" name="name_error"><?php echo form_error('username')?></div>
                 	</div>
