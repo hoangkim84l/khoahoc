@@ -1,63 +1,21 @@
-	<meta charset="utf-8">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
-	<meta http-equiv="cache-control" content="private">
-	<meta http-equiv="Content-Language" content="vi">
-	<meta name="google" content="notranslate">
-	<meta name="language" content="vi_VN">
-	<meta name="robots" content="index, follow">
-	<meta name="author" content="TRẦN ANH GROUP">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name = "format-detection" content = "telephone=no">
-	<title id="hdtitle">Trần Anh Group</title>
-	<meta name="description" content="Trần Anh Group">
-	<meta name="keywords" content="Trần Anh Group">
-
-	<!-- android -->
-	<meta name="mobile-web-app-capable" content="yes">
-	<meta http-equiv="cleartype" content="on">
-	<!-- iOS -->
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-	<meta name="apple-mobile-web-app-title" content="TRẦN ANH GROUP">
-	<!-- Facebook -->
-	<meta property="og:url" content="http://www.diaoc534.com?">
-	<meta property="og:title" content="Trần Anh Group">
-	<meta property="og:description" content="Trần Anh Group">
-	<meta property="og:type" content="website">
-	<meta property="og:site_name" content="TRẦN ANH GROUP">
-	<meta property="og:image" content="http://www.diaoctrananh.com/catalog/view/theme/default/images/social-share.png">
-	<meta property="og:locale" content="vi_VN">
-	<!-- Google Plus -->
-	<meta itemprop="name" content="Trần Anh Group">
-	<meta itemprop="description" content="Trần Anh Group">
-	<meta itemprop="image" content="<?php echo public_url()?>/site/images/social-share.png">
-
-	<link rel="icon" href="http://www.diaoctrananh.com/catalog/view/theme/default/images/favicon.png">
-	<link href="<?php echo public_url()?>/site/stylesheets/fonts.css" rel="stylesheet" type="text/css">
-	<link href="<?php echo public_url()?>/site/stylesheets/animation.css" rel="stylesheet" type="text/css">
-	<link href="<?php echo public_url()?>/site/stylesheets/style.css" rel="stylesheet" type="text/css">
-	<link rel="alternate" href="http://www.diaoctrananh.com/vi/" hreflang="vi-vn">
-	<link rel="alternate" href="http://www.diaoctrananh.com/en/" hreflang="en-gb">
-	<link href="http://www.diaoc534.com?" rel="canonical">
-	<link href="<?php echo public_url()?>/site/stylesheets/validationEngine.jquery.css" rel="stylesheet" />
-	<!--[if lt IE 9]>
-	<meta http-equiv="refresh" content="0; url=http://www.diaoctrananh.com/detect.html" />
-	<script type="text/javascript">
-	/* <![CDATA[ */
-	window.top.location = 'http://www.diaoctrananh.com/detect.html';
-	/* ]]> */
-	</script>
-	<![endif]-->
-
-	<script type="text/javascript" src="<?php echo public_url()?>/site/scripts/jquery.js"></script>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109898947-1"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-
-	  gtag('config', 'UA-109898947-1');
-	</script>
+<meta charset="utf-8">
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+<title>Xenia - Fully Responsive & Retina Ready Template</title>
+<meta content="xenia - responsive and retina ready template" name="description">
+<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"/>
+<link href="<?php echo public_url()?>site/assets/images/favicon.ico" rel="shortcut icon"/>
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php echo public_url()?>site/assets/images/apple-touch-icon-144x144-precomposed.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo public_url()?>site/assets/images/apple-touch-icon-114x114-precomposed.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo public_url()?>site/assets/images/apple-touch-icon-72x72-precomposed.png" />
+<link rel="apple-touch-icon-precomposed" href="<?php echo public_url()?>site/assets/images/apple-touch-icon-precomposed.png" />
+<!-- JS FILES -->
+<script type="text/javascript" src="<?php echo public_url()?>site/assets/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="<?php echo public_url()?>site/assets/js/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="<?php echo public_url()?>site/assets/js/modernizr.custom.js"></script>
+<!-- CSS FILES -->
+<link href="<?php echo public_url()?>site/assets/css/style.css" media="screen" rel="stylesheet" type="text/css">
+<link href="<?php echo public_url()?>site/assets/css/responsive.css" media="screen" rel="stylesheet" type="text/css">
+<link href="<?php echo public_url()?>site/assets/rs-plugin/css/settings.css" media="screen" rel="stylesheet" type="text/css">
+<link href="<?php echo public_url()?>site/assets/css/navstylechange.css" media="screen" rel="stylesheet" type="text/css">
+<link href="<?php echo public_url()?>site/assets/css/cubeportfolio.min.css" media="screen" rel="stylesheet" type="text/css">
+<link href="<?php echo public_url()?>site/assets/css/testimonialrotator.css" media="screen" rel="stylesheet" type="text/css">

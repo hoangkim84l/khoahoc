@@ -1,92 +1,291 @@
-﻿<!--SLIDER-->
-<div class="slider-home" data-time="5000">
-   <div class="slide-bg">
-      <div class="pagination"></div>
-      <div class="item-wrapper">
-        <?php foreach($slide_list as $row):?>  
-         <div class="item-container">
-            <div class="bg-home" style="background-image:url(<?php echo base_url('upload/slide/'.$row->image_link)?>)"></div>
-         </div>
-        <?php endforeach;?>
+<?php $this->load->view('site/slide')?> 
+ <div class="container marg75">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="promo-block">
+        <div class="promo-text">Our Services</div>
+        <div class="center-line"></div>
       </div>
-   </div>
+    </div>
+  </div>
 </div>
-<!--SLIDER--> 
-<!--MESSAGE-->
-<section class="message">
-   <span class="message-bg"></span>
-   <div class="title">
-      <h2>THÔNG ĐIỆP</h2>
-   </div>
-   <div class="sumary-box ani-text">
-      <p><strong>Kính thưa Quý khách hàng, Quý đối tác và toàn thể nhân viên!</strong><br>Trần Anh Group được khởi dựng từ khát vọng về một tập đoàn đa năng, chuyên nghiệp, với mục tiêu khẳng định vị thế và thương hiệu trên thị trường bất động sản ở khu vực Nam Bộ nói chung và phía Tây Bắc TP.HCM nói riêng.<br>Với nguồn tài chính vững chắc, hướng quản trị phù hợp, cùng đội ngũ nhân viên chuyên nghiệp, sau gần 10 năm hoạt động, chúng tôi đang dần khẳng định được vị thế và vai trò của mình đối với kinh tế - xã hội khu vực, đồng thời thể hiện được đẳng cấp thương hiệu trên thị trường...</p>
-      <a class="view-more" href="thong-tin-ve-chung-toi.html">xem thêm</a>
-   </div>
-</section>
-<!--MESSAGE-->
-<!--REFRESH-->
-<section class="refresh">
-   <span class="refresh-bg" style="background-image:url(http://www.diaoctrananh.com/pictures/catalog/home/refresh-bg.jpg)"></span>
-   <div class="slogan rellax" data-rellax-percentage="0.5" data-rellax-speed="-2">
-      <h1>nơi cuộc sống</h1>
-      <h2>Tốt đẹp hơn</h2>
-   </div>
-</section>
-<!--REFRESH-->
-<!--LASTES-->
-<section class="latest">
-   <span class="latest-bg"></span>
-   <div class="title">
-      <h2>TIN TỨC BẤT ĐỘNG SẢN</h2>
-   </div>
-   <div class="latest-box">
-      <div class="latest-slider" data-time="5000">
-        <?php if(empty($isHomeNews)):?>
-               <h2 style='text-align:center'>Chưa có bài viết nào</h2>
-        <?php else:?>
-        <?php foreach($isHomeNews as $rowNews):?> 
-         <div class="latest-item">
-            <div class="latest-pic">
-               <img src="<?php echo base_url('upload/news/'.$rowNews->image_link)?>" alt="<?php echo $rowNews->meta_key; ?>">
-            </div>
-            <div class="latest-text">
-               <h3><?php echo $rowNews->title; ?></h3>
-               <a class="go-news" href="<?=site_url('bai-viet/chi-tiet/'.$rowNews->slug_title.'-'.$rowNews->id)?>"></a>
-            </div>
-         </div>
-        <?php endforeach;?> 
-        <?php endif;?>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-ms-12">
+      <div class="hi-icon-effect marg50">
+        <div class="hi-icon icon-lightbulb"></div>
+        <div class="service-name">Minimal Design</div>
+        <div class="service-text">Suspendisse velit ticol sodales, viverra sigirton vitae, accumsan orci mauris nec ipsum</div>
       </div>
-   </div>
-</section>
-<!--LASTES-->
-<!--VIDEO-->
-<section class="video-content">
-   <div class="title">
-      <h2>Video</h2>
-      <p>Dự án Phúc An City</p>
-   </div>
-   <div class="box-video-center">
-      <div class="video-cover" id="videocontainer" data-fullscreen="false">
-         <a class="player-vid" href="javascript:void(0);"><span></span></a>
-         <div class="pic-video" style="background-image:url(http://www.diaoctrananh.com/pictures/catalog/home/video-bg.jpg)"></div>
-         <video id="video-full" class="video-full" muted  controls>
-            <source src="http://www.diaoctrananh.com/download/phuc-an.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'/>
-         </video>
-         <div id="videocontrols" class="controls" data-state="hidden">
-            <button id="stop" class="stop" type="button" data-state="stop"></button>
-            <button id="playpause" class="playpause" type="button" data-state="play"></button>
-            <div class="progress"><progress id="progress" value="0" min="0"><span id="progressbar"></span></progress></div>
-            <button id="mute" class="mute" type="button" data-state="mute"></button>
-            <button id="fullscreen" class="fullscreen" type="button" data-state="go-fullscreen"></button>
-         </div>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-ms-12">
+      <div class="hi-icon-effect marg50">
+        <div class="hi-icon icon-heart"></div>
+        <div class="service-name">Love Our Clients</div>
+        <div class="service-text">Suspendisse velit ticol sodales, viverra sigirton vitae, accumsan orci mauris nec ipsum</div>
       </div>
-   </div>
-</section>
-<!--VIDEO-->
-<div class="loadicon">
-  <svg  class="load-present" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200">
-  <path class="stroke-line"  d="M97.5,1.3 11.9,50.7 11.9,149.6 97.5,199 97.5,169.9 37.1,135 37.1,65.2 72.4,44.8 72.4,121 97.5,135.5z"></path>
-  <path class="stroke-line"  d="M102.4,1.3 102.4,135.5 127.6,121 127.6,44.8 162.9,65.2 162.9,135 102.4,169.9 102.4,199 188.1,149.6 188.1,50.7z"></path>
-  </svg>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-ms-12">
+      <div class="hi-icon-effect marg50">
+        <div class="hi-icon icon-params"></div>
+        <div class="service-name">Powerful & Flexible</div>
+        <div class="service-text">Suspendisse velit ticol sodales, viverra sigirton vitae, accumsan orci mauris nec ipsum</div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-ms-12">
+      <div class="hi-icon-effect marg50">
+        <div class="hi-icon icon-globe"></div>
+        <div class="service-name">Premium Support</div>
+        <div class="service-text">Suspendisse velit ticol sodales, viverra sigirton vitae, accumsan orci mauris nec ipsum</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-color marg75">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="promo-block">
+          <div class="promo-text">Recent Works</div>
+          <div class="center-line"></div>
+        </div>
+        <div class="promo-paragraph">Pellentesque luctus ac lorem id luctus. Aenean sagittis magna sit amet purus vehicsula. Tristique nunc a felis ultrices phasellus vitae ultrices lectus, eget posuere est. Win none ipsum suspendisse eu velit sodales, viverra lorem vitae, accumsan orci sagittis</div>
+      </div>
+    </div>
+  </div>
+  <div class="container marg50">
+    <div class="grid hover-3">
+      <div class="cbp-l-grid-projects" id="grid-container">
+        <ul>
+          <li class="cbp-item">
+            <div class="portfolio-main">
+              <figure>
+                <img src="<?php echo public_url()?>site/assets/images/99.jpg" alt="">
+                <figcaption>
+                  <h3>We Ship Anywhere</h3>
+                  <span>Ben Thompson</span>
+                  <a href="<?php echo public_url()?>site/assets/images/99.jpg" class="portfolio-attach cbp-lightbox" data-title="We Ship Anywhere<br>by Ben Thompson"><i class="icon-search"></i></a>
+                  <a href="portfolio/project9.html" class="portfolio-search cbp-singlePageInline"><i class="icon-attach"></i></a>
+                </figcaption>
+              </figure> 
+            </div>
+          </li>
+          <li class="cbp-item">
+            <div class="portfolio-main">
+              <figure>
+                <img src="<?php echo public_url()?>site/assets/images/22.jpg" alt="">
+                <figcaption>
+                  <h3>Numbeez</h3>
+                  <span>Keren Hossy</span>
+                  <a href="<?php echo public_url()?>site/assets/images/22.jpg" class="portfolio-attach cbp-lightbox" data-title="Numbeez<br>by Keren Hossy"><i class="icon-search"></i></a>
+                  <a href="portfolio/project2.html" class="portfolio-search cbp-singlePageInline"><i class="icon-attach"></i></a>
+                </figcaption>
+              </figure> 
+            </div>
+          </li>
+          <li class="cbp-item">
+            <div class="portfolio-main">
+              <figure>
+                <img src="<?php echo public_url()?>site/assets/images/33.jpg" alt="">
+                <figcaption>
+                  <h3>Kergiwax</h3>
+                  <span>Jacob Cummings</span>
+                  <a href="<?php echo public_url()?>site/assets/images/33.jpg" class="portfolio-attach cbp-lightbox" data-title="Kergiwax<br>by Jacob Cummings"><i class="icon-search"></i></a>
+                  <a href="portfolio/project3.html" class="portfolio-search cbp-singlePageInline"><i class="icon-attach"></i></a>
+                </figcaption>
+              </figure> 
+            </div>
+          </li>
+          <li class="cbp-item">
+            <div class="portfolio-main">
+              <figure>
+                <img src="<?php echo public_url()?>site/assets/images/44.jpg" alt="">
+                <figcaption>
+                  <h3>Thanks!</h3>
+                  <span>MoneyDesktop</span>
+                  <a href="<?php echo public_url()?>site/assets/images/44.jpg" class="portfolio-attach cbp-lightbox" data-title="Thanks!<br>by MoneyDesktop"><i class="icon-search"></i></a>
+                  <a href="portfolio/project4.html" class="portfolio-search cbp-singlePageInline"><i class="icon-attach"></i></a>
+                </figcaption>
+              </figure> 
+            </div>
+          </li>
+          <li class="cbp-item">
+            <div class="portfolio-main">
+              <figure>
+                <img src="<?php echo public_url()?>site/assets/images/55.jpg" alt="">
+                <figcaption>
+                  <h3>Think Industries Alt</h3>
+                  <span>Gustav Holtz</span>
+                  <a href="<?php echo public_url()?>site/assets/images/55.jpg" class="portfolio-attach cbp-lightbox" data-title="Think Industries Alt<br>by Gustav Holtz"><i class="icon-search"></i></a>
+                  <a href="portfolio/project5.html" class="portfolio-search cbp-singlePageInline"><i class="icon-attach"></i></a>
+                </figcaption>
+              </figure> 
+            </div>
+          </li>
+          <li class="cbp-item">
+            <div class="portfolio-main">
+              <figure>
+                <img src="<?php echo public_url()?>site/assets/images/66.jpg" alt="">
+                <figcaption>
+                  <h3>Lapland</h3>
+                  <span>Julia Romer</span>
+                  <a href="<?php echo public_url()?>site/assets/images/66.jpg" class="portfolio-attach cbp-lightbox" data-title="Lapland<br>by Julia Romer"><i class="icon-search"></i></a>
+                  <a href="portfolio/project6.html" class="portfolio-search cbp-singlePageInline"><i class="icon-attach"></i></a>
+                </figcaption>
+              </figure> 
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-12">
+        <div class="button-center"><a href="portfolio/loadmore.html" class="btn-simple cbp-l-loadMore-button-link">Load Full Portfolio</a></div>
+      </div>
+    </div>  
+  </div>
+</div>
+<div class="prl-1">
+  <div class="prlx">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 marg50"><div class="quote"><i class="fa fa-quote-right"></i></div></div>
+        <div class="col-lg-12">
+          <div class="testimonials">
+            <div id="carousel-testimonials" class="carousel slide">
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-testimonials" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-testimonials" data-slide-to="1" class=""></li>
+                <li data-target="#carousel-testimonials" data-slide-to="2" class=""></li>
+                <li data-target="#carousel-testimonials" data-slide-to="3" class=""></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="item active">
+                  <p class="testimonial-quote">Phasellus vitae ultrices lectus, eget posuere est. In non mi ipsum. Suspendisse eu velit sodales, viverra lorem vitae accumsan. Mauris nec ipsum tempus, lorem sodales ante praesent quis interdum sapien</p>
+                  <p class="testimonial-author">John Doe</p>
+                </div>
+                <div class="item">
+                  <p class="testimonial-quote">Duis nec neque bibendum, mollis arcu eget, lacinia sem. Sed nec purus a metus facilisis mollis. Vivamus sollicitudin id sem a blandit. Donec ut imperdiet arcu. Integer aliquet scelerisque aliquet.</p>
+                  <p class="testimonial-author">Mila Markovna</p>
+                </div>
+                <div class="item">
+                  <p class="testimonial-quote">Proin sagittis turpis nisi, sit amet bibendum odio faucibus at. Nunc facilisis ipsum quis fermentum auctor. Curabitur felis lorem, aliquam quis ornare et, luctus a sapien nunc sollicitudin.</p>
+                  <p class="testimonial-author">Gustav Holtz</p>
+                </div>
+                <div class="item">
+                  <p class="testimonial-quote">Aenean luctus non eros et bibendum. Vivamus facilisis sollicitudin auctor. In tellus ante, porttitor et gravida non, tincidunt lacinia augue. </p>
+                  <p class="testimonial-author">Julia Romer</p>
+                </div>
+              </div>
+              <a class="left carousel-control" href="#carousel-testimonials" data-slide="prev">&lsaquo;</a>
+              <a class="right carousel-control" href="#carousel-testimonials" data-slide="next">&rsaquo;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container marg75">
+  <div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-12">
+      <div class="promo-block">
+        <div class="promo-text">About Company</div>
+        <div class="center-line"></div>
+      </div>
+      <div class="marg50">
+        <p class="about-text"><span class="first-letter">C</span>hasellus vitae ultrices lectus, eget posuere est. In non mi ipsum. Suspendisse velit ticol sodales, viverra lorem vitae, accumsan orci. Mauris nec ipsum tempus, laorei lorem vel, sodales ante. Praesent quis interdum sapien, et pulvinar leo. Vivamus mattis fermentum eros vel ullamcorper. Integer egestas metus vitae mi molestie, ac euismod quam vestibulum. Pellentesque ac molestie eros. Praesent at nunc vel est tempor aliqua.</p>
+        <ul class="list-check">
+          <li><i class="icon-ok"></i> Clean And Minimal Design</li>
+          <li><i class="icon-ok"></i> We Love Our Clients</li>
+          <li><i class="icon-ok"></i> Powerful & Flexible Settings</li>
+          <li><i class="icon-ok"></i> Online Premium Support</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-12">
+      <div class="promo-block">
+        <div class="promo-text">Recent Post</div>
+        <div class="center-line"></div>
+      </div>
+      <div class="row marg50">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 col-ms-12">
+          <div class="blog-main">
+            <div class="blog-images">
+              <div class="view view-fifth">
+                <img src="<?php echo public_url()?>site/assets/images/blog1.jpg" alt="">
+                <div class="mask"><a href="#" class="btn-blog">Read More</a></div>
+              </div>
+            </div>
+            <div class="blog-icon"><i class="icon-music"></i></div>
+            <div class="blog-name"><a href="#">Taresent very bear</a></div>
+            <div class="blog-desc">Fabruary 17, 2017 by <a href="#">DankovThemes</a>, in <a href="#">Envato</a></div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 col-ms-12">
+          <div class="blog-main">
+            <div class="blog-images">
+              <div class="view view-fifth">
+                <img src="<?php echo public_url()?>site/assets/images/blog2.jpg" alt="">
+                <div class="mask"><a href="#" class="btn-blog">Read More</a></div>
+              </div>
+            </div>
+            <div class="blog-icon"><i class="icon-pencil"></i></div>
+            <div class="blog-name"><a href="#">Premium fermentum</a></div>
+            <div class="blog-desc">March 17, 2017 by <a href="#">Admin</a>, in <a href="#">Envato</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container marg75">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="promo-block">
+        <div class="promo-text">Our Clients</div>
+        <div class="center-line"></div>
+      </div>
+    </div>
+    <div class="col-lg-12 marg25">
+      <div class="jcarousel-wrapper">
+        <div class="jcarousel">
+          <ul>
+            <li><a href="#"><img src="<?php echo public_url()?>site/assets/images/client-1.jpg" alt=""></a></li>
+            <li><a href="#"><img src="<?php echo public_url()?>site/assets/images/client-2.jpg" alt=""></a></li>
+            <li><a href="#"><img src="<?php echo public_url()?>site/assets/images/client-3.jpg" alt=""></a></li>
+            <li><a href="#"><img src="<?php echo public_url()?>site/assets/images/client-5.jpg" alt=""></a></li>
+            <li><a href="#"><img src="<?php echo public_url()?>site/assets/images/client-6.jpg" alt=""></a></li>
+            <li><a href="#"><img src="<?php echo public_url()?>site/assets/images/client-4.jpg" alt=""></a></li>
+            <li><a href="#"><img src="<?php echo public_url()?>site/assets/images/client-1.jpg" alt=""></a></li>
+            <li><a href="#"><img src="<?php echo public_url()?>site/assets/images/client-2.jpg" alt=""></a></li>
+            <li><a href="#"><img src="<?php echo public_url()?>site/assets/images/client-3.jpg" alt=""></a></li>
+            <li><a href="#"><img src="<?php echo public_url()?>site/assets/images/client-5.jpg" alt=""></a></li>
+            <li><a href="#"><img src="<?php echo public_url()?>site/assets/images/client-6.jpg" alt=""></a></li>
+            <li><a href="#"><img src="<?php echo public_url()?>site/assets/images/client-4.jpg" alt=""></a></li>
+          </ul>
+        </div>
+        <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+        <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="prl-3 marg50 twitter-footer">
+  <div class="prlx-3">
+    <div class="container marg75">
+      <div class="row">
+        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 col-ms-12">
+          <div class="twit-icon"><i class="fa fa-twitter"></i></div>
+        </div>
+        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-11 col-ms-12">
+          <div class="tweet"></div>
+        </div>
+        <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs">
+          <div class="paginat">
+            <a id="prev">&lsaquo;</a>
+            <a id="next">&rsaquo;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

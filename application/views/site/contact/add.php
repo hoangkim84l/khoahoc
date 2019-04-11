@@ -1,73 +1,93 @@
-<!--SLIDER-->
-<div class="slider-inner" data-time="6000">
-   <div class="title-page">
-      <h1>Liên hệ</h1>
-   </div>
-   <div class="slide-bg">
-      <div class="pagination"></div>
-      <div class="item-wrapper">
-         <div class="item-container">
-            <div class="bg-inner" style="background-image:url(http://www.diaoctrananh.com/pictures/catalog/background/bg11.jpg)"></div>
-         </div>
-      </div>
-   </div>
+<div class="page-in">
+ <div class="container">
+  <div class="row">
+   <div class="col-lg-6 pull-left"><div class="page-in-name">Contacts: <span>Need Support? Get It!</span></div></div>
+   <div class="col-lg-6 pull-right"><div class="page-in-bread"><span>You are here:</span> <a href="#">Home</a> \ Contacts</div></div>
 </div>
-<!--SLIDER-->
-<!--CONTENT-->
-<section class="contact-content">
-   <div class="title">
-      <h2>Thông tin</h2>
-   </div>
-   <div class="info-box">
-      <div class="contact-bg" style="background-image:url(http://www.diaoctrananh.com/pictures/catalog/contact/bg.jpg)"></div>
-      <div class="company-info ani-text">
-         <h3>TRẦN ANH GROUP</h3>
-         <ul>
-            <li class="bt-location">
-               <p><?php echo $supports->address?></p>
-            </li>
-            <li class="bt-phone">
-               <p><?php echo $supports->phone?></p>
-            </li>
-            <li class="bt-email">
-               <p><a href="mailto:<?php echo $supports->gmail?>"><?php echo $supports->gmail?></a></p>
-            </li>
-         </ul>
-      </div>
-   </div>
-   <div class="form-box ani-text">
-      <h3>Mẫu thông tin liên hệ</h3>
-      <form action="" id="frm_contact" name="frm_contact" method="post">
-         <div class="require-col">
-            <div class="input-text"><input id="name" name="name" value="HỌ VÀ TÊN (*)" type="text" data-holder="HỌ VÀ TÊN (*)"></div>
-            <div class="input-text"><input id="address" name="address" value="ĐỊA CHỈ" type="text" data-holder="ĐỊA CHỈ"></div>
-            <div class="input-text"><input id="phone" name="phone" value="ĐIỆN THOẠI (*)" type="text" data-holder="ĐIỆN THOẠI (*)"></div>
-            <div class="input-text"><input id="email" name="email" value="EMAIL (*)" type="text" data-holder="EMAIL (*)"></div>
-            <div class="input-area"><label class="title-cap">NỘI DUNG (*)</label><textarea name="comments" id="comments" ></textarea></div>
-            <div class="input-but">
-               <div class="outer-but"><button id="btn-contact-submit" type="submit">Gửi thông tin</button></div>
-            </div>
-         </div>
-      </form>
-   </div>
-</section>
-<section class="contact-map">
-   <div class="googlemap">
-      <div class="zoom-control">
-         <a class="zoom-in" href="javascript:void(0);" id="zoom-in"></a>
-         <a class="zoom-out" href="javascript:void(0);" id="zoom-out"></a>
-      </div>
-      <div id="map-canvas"></div>
-   </div>
-</section>
-<!--CONTENT-->
-<div class="contact-form-error-name class-hidden">Vui lòng nhập tên!</div>
-<div class="contact-form-error-phone class-hidden">Điện thoại không hợp lệ!</div>
-<div class="contact-form-error-email class-hidden">Email không hợp lệ!</div>
-<div class="contact-form-error-comments class-hidden">Vui lòng nhập nội dung!</div>
-<div class="contact-form-name class-hidden">HỌ VÀ TÊN (*)</div>
-<div class="contact-form-phone class-hidden">ĐIỆN THOẠI (*)</div>
-<div class="contact-form-email class-hidden">EMAIL (*)</div>
-<div class="contact-form-comments class-hidden">NỘI DUNG (*)</div>
-<div class="contact-form-contact-success class-hidden">Thông tin quý khách hàng đã được ghi nhận. Chúng tôi sẽ liên hệ với quý khách hàng trong thời gian sớm nhất. Cảm ơn quý khách</div>
-<div class="contact-form-contact-fail class-hidden">Thông tin liên hệ của bạn không gửi được, vui lòng kiểm tra lại!</div>
+</div>
+</div>
+<div class="container marg75">
+ <div class="row">
+  <div class="col-lg-12">
+   <div class="promo-block">
+    <div class="promo-text">Where Find Us?</div>
+    <div class="center-line"></div>
+ </div>
+</div>
+</div>
+</div>
+<div class="container marg50">
+ <div class="row">
+  <div class="col-lg-12">
+   <iframe width="100%" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.ru/?ie=UTF8&amp;ll=42.376467,-71.063175&amp;spn=0.006967,0.016512&amp;t=m&amp;z=17&amp;output=embed"></iframe>
+</div> 
+</div>
+</div>  
+<div class="container marg100">
+ <div class="row">
+  <div class="col-lg-8 col-md-8 col-sm-12">
+   <div class="promo-block">
+    <div class="promo-text">Contact Form</div>
+    <div class="center-line"></div>
+ </div>
+ <div class="marg50">
+    <div class="row">
+     <form id="contactForm" class="form-style" name="sentMessage"  novalidate="">
+      <div class="col-lg-4">
+       <div class="text_cont form-group floating-label-form-group controls">
+        <input id="name" type="text" placeholder="You Name" required="" data-validation-required-message="Please enter name" class="form-control"><span class="help-block text-danger"></span>
+     </div>
+  </div>
+  <div class="col-lg-4">
+    <div class="text_cont form-group floating-label-form-group controls">
+     <input id="email" type="email" placeholder="You Email" required="" data-validation-required-message="Please enter email" class="form-control"><span class="help-block text-danger"></span>
+  </div>
+</div>
+<div class="col-lg-4">
+ <div class="text_cont form-group floating-label-form-group controls">
+  <input id="phone" type="tel" placeholder="You Phone" required="" data-validation-required-message="Please enter phone number" class="form-control"><span class="help-block text-danger"></span>
+</div>
+</div>
+<div class="col-lg-12">
+ <div class="text_cont form-group floating-label-form-group controls">
+  <textarea id="message" cols="40" rows="10" placeholder="Message" required="" data-validation-required-message="Please enter a message." aria-invalid="false" class="form-control"></textarea><span class="help-block text-danger"></span>
+</div>
+</div>
+<div class="col-lg-12"><div id="success"></div></div>
+<div class="col-lg-12"><p><button type="submit" class="btn btn-default">Send Message</button></p></div>
+</form>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12">
+   <div class="promo-block">
+    <div class="promo-text">Information</div>
+    <div class="center-line"></div>
+ </div>
+ <div class="marg50">
+  <ul class="contact-footer">
+   <li><i class="icon-location"></i> Adress: 455 Martinson, Los Angeles</li>
+   <li><i class="icon-mobile"></i> Phone: 8 (043) 567 - 89 - 30</li>
+   <li><i class="icon-inbox"></i> Fax: 8 (057) 149 - 24 - 64</li>
+   <li><i class="icon-videocam"></i> Skype: companyname</li>
+   <li><i class="icon-mail"></i> E-mail: support@email.com</li>
+   <li><i class="icon-key"></i> Weekend: from 9 am to 6 pm</li>
+</ul> 
+<ul class="soc-contacts">
+   <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+   <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+   <li><a href="#"><i class="fa fa-tumblr-square"></i></a></li>
+   <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+   <li><a href="#"><i class="fa fa-google-plus-square"></i></a></li>
+   <li><a href="#"><i class="fa fa-flickr"></i></a></li>
+   <li><a href="#"><i class="fa fa-vimeo-square"></i></a></li>
+   <li><a href="#"><i class="fa fa-github-square"></i></a></li>
+   <li><a href="#"><i class="fa fa-bitbucket-square"></i></a></li>
+   <li><a href="#"><i class="fa fa-pinterest-square"></i></a></li>
+   <li><a href="#"><i class="fa fa-xing-square"></i></a></li>
+   <li><a href="#"><i class="fa fa-youtube-square"></i></a></li>
+</ul> 
+</div>
+</div>
+</div>
+</div>
