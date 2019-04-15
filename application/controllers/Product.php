@@ -127,7 +127,7 @@ Class Product extends MY_Controller
     function view()
     {
         //lay id san pham muon xem
-        $id = $this->uri->rsegment(3);
+        $id = $this->uri->rsegment(4);
         $product = $this->product_model->get_info($id);
         if(!$product) redirect();
         //lấy số điểm trung bình đánh giá

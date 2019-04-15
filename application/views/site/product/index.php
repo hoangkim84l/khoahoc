@@ -26,14 +26,13 @@
         <div id="c79" class="csc-default">
           <div class="csc-textpic csc-textpic-center csc-textpic-above">
             <div class="csc-textpic-imagewrap csc-textpic-single-image" style="width:278px;">
-              <img src="uploads/pics/_Eingangsbild_Labor_01.jpg" width="278" height="81" alt="" style="float: left;" /></div>
+              <img src="<?php echo base_url('upload/product/'.$row->image_link)?>" width="278" height="81" alt="" style="float: left;" /></div>
               <div class="csc-textpic-text">
                 <p class="bodytext"><span style="font-weight: bold;"></span>
                 </p>
-                <h4><?php echo $row->name?></h4>
-                <p class="bodytext">At home in the laboratories of the world for decades.
-                </p>
-                <p class="bodytext"><a href="en/products-solutions/laboratory-glassware.html" title="Laborglas" class="internal-link">Learn more</a></p>
+                <h4 class="custom-title"><?php echo $row->name?></h4>
+                <div class="bodytext custom-content"><?php echo $row->content?>...</div>
+                <p class="bodytext"><a href="<?=site_url('san-pham/chi-tiet/'.$row->slug_name.'-'.$row->id)?>" title="<?php echo $row->name?>" class="internal-link">Xem thêm</a></p>
               </div>
             </div>
             <div class="csc-textpic-clear">

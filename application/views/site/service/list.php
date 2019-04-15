@@ -11,7 +11,7 @@
    
     <div class="col-lg-8 col-sm-12 col-md-8 text-left"> 
       <?php foreach($list as $service):?>
-        <h4><a href="#"><?php echo $service->title?></a></h4>
+        <h4><a href="<?=site_url('dich-vu/chi-tiet/'.$service->slug_title.'-'.$service->id)?>"><?php echo $service->title?></a></h4>
         <p><?php echo $service->intro?>.</p>
       <hr>
       <?php endforeach;?>
