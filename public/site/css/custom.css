@@ -6,3 +6,15 @@
 a{
 	text-decoration:none !important;
 }
+.custom-title{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: pre;
+	width:100%;
+}
+.custom-content{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: pre;
+	width:100%;
+}

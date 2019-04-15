@@ -20,8 +20,10 @@ select,textarea {font-family:Helvetica, Verdana, Arial;font-size: 11px;}
 /*===layout===*/
 #layout { width:920px; margin:0 auto; padding:0 20px 0 40px;overflow:hidden;}
 
-#mainCon { width:550px; float:left; /*overflow:hidden;*/}
-#sidebar { width:300px; float:right; overflow:hidden;}
+/*#mainCon { width:550px; float:left; }*/
+#mainCon { float:left; }
+/*#sidebar { width:300px; float:right; overflow:hidden;}*/
+#sidebar {float:right; overflow:hidden;}
 #mainBanner_twoColumn {font-size:0;line-height:0px;width:590px;}
 #mainBanner_twoColumn img { border:10px solid #fff;margin-bottom:10px;}
 #mainCon_bottom{background:#fff; padding:5px;width:580px;/*overflow:hidden;*/}

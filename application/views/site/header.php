@@ -1,14 +1,10 @@
 <div id="headerTop">
     <div id="language">
-        <a id="languageBtn" href="javascript:void(0);">Ngôn ngữ</a>
-        <ul id="languageList" style="display:none">
-            <li>
-                <a href="de/home.html?fbclid=IwAR28nsNRdrZiJQgS7usL5SF8CIu__p2yfCPpSHgu_kKkRrJMyXGHF9ipyus&amp;cHash=6ab829717af4ffdab850270f8acf6eea">Tiếng việt</a>
-            </li>
-            <li>
-                <a href="en/home.html?fbclid=IwAR28nsNRdrZiJQgS7usL5SF8CIu__p2yfCPpSHgu_kKkRrJMyXGHF9ipyus&amp;cHash=a7d5b5fc2a08eea5a0fb9c101a695f19">English</a>
-            </li>
-        </ul>
+        <form>
+            <input type="text" name="search" placeholder="Nhập tên sản phẩm" />
+            <input type="submit" name="search" value="Tìm kiếm" class="btn btn-default">
+        </form>
+        
     </div>
     <div id="topLinks">
         <ul>

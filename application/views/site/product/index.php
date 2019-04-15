@@ -10,7 +10,7 @@
     </div>
   </div>
 </div>
-<div id="mainCon">
+<div id="mainCon" class="col-sm-12 col-lg-6 col-md-6">
   <div id="mainBanner_twoColumn">
   </div>
   <div id="mainCon_bottom" class="border mb">
@@ -22,27 +22,29 @@
         </div>
       </div>
       <a id="c1774"></a>
-      <div id="c79" class="csc-default">
-        <div class="csc-textpic csc-textpic-center csc-textpic-above">
-          <div class="csc-textpic-imagewrap csc-textpic-single-image" style="width:278px;">
-            <img src="uploads/pics/_Eingangsbild_Labor_01.jpg" width="278" height="81" alt="" style="float: left;" /></div>
-            <div class="csc-textpic-text">
-              <p class="bodytext"><span style="font-weight: bold;"></span>
-              </p>
-              <h4>Laboratory glassware</h4>
-              <p class="bodytext">At home in the laboratories of the world for decades.
-              </p>
-              <p class="bodytext"><a href="en/products-solutions/laboratory-glassware.html" title="Laborglas" class="internal-link">Learn more</a></p>
+      <?php foreach($list as $row):?>
+        <div id="c79" class="csc-default">
+          <div class="csc-textpic csc-textpic-center csc-textpic-above">
+            <div class="csc-textpic-imagewrap csc-textpic-single-image" style="width:278px;">
+              <img src="uploads/pics/_Eingangsbild_Labor_01.jpg" width="278" height="81" alt="" style="float: left;" /></div>
+              <div class="csc-textpic-text">
+                <p class="bodytext"><span style="font-weight: bold;"></span>
+                </p>
+                <h4><?php echo $row->name?></h4>
+                <p class="bodytext">At home in the laboratories of the world for decades.
+                </p>
+                <p class="bodytext"><a href="en/products-solutions/laboratory-glassware.html" title="Laborglas" class="internal-link">Learn more</a></p>
+              </div>
+            </div>
+            <div class="csc-textpic-clear">
             </div>
           </div>
-          <div class="csc-textpic-clear">
-          </div>
-        </div>
-
+          <hr/ style="width:200px;">
+        <?php endforeach;?>
       </div>
     </div>
   </div>
-  <div id="sidebar">
+  <div id="sidebar" class="col-lg-5 col-md-5 col-sm-12">
     <div id="seite" class="border mb">
       <div class="tx-extrecommend-pi1">
 
@@ -58,14 +60,15 @@
           <div class="tx-extteaserbox-pi1">
 
             <div class="text">
-              <h2><img title="BUSINESS CONTACT" alt="BUSINESS CONTACT" src="fileadmin/textimage/Headline_White_15px/358654c7b17053ed4045e96ec0c5a2f7.png"  /></h2>
-              <p class="bodytext">DWK Life Sciences GmbH
-                <br />
-                <br />Hattenbergstraße 10
-                <br />55122 Mainz
-                <br />Germany
-                <br />
-                <br />Please click&nbsp;<a href="en/kontakt.html" title="to the contactinformation" class="internal-link">here</a>&nbsp;for further contact details.</p>
+              <h2><?php echo $supports->name?></h2>
+              <p class="bodytext">
+                <ul class="contact-footer" style="text-align: left;list-style: none;">
+                 <li><i class="icon-location"></i> Địa chỉ : <?php echo $supports->address?></li>
+                 <li><i class="icon-mobile"></i> Điện thoại : <a href="tel:<?php echo $supports->phone?>"><?php echo $supports->phone?></a></li>
+                 <li><i class="icon-inbox"></i> Hotline : <a href="tel:<?php echo $supports->hotline?>?>"><?php echo $supports->hotline?></a></li>
+                 <li><i class="icon-videocam"></i> Zalo : <?php echo $supports->zalo?></li>
+                 <li><i class="icon-mail"></i> E-mail: <a href="mailto:<?php echo $supports->gmail?>"><?php echo $supports->gmail?></a></li>
+               </ul> 
               </div>
 
             </div>

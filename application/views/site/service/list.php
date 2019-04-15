@@ -10,19 +10,22 @@
   <div class="row content">
    
     <div class="col-lg-8 col-sm-12 col-md-8 text-left"> 
-      <h4>Welcome</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <?php foreach($list as $service):?>
+        <h4><a href="#"><?php echo $service->title?></a></h4>
+        <p><?php echo $service->intro?>.</p>
       <hr>
-      <h4>Test</h4>
-      <p>Lorem ipsum...</p>
+      <?php endforeach;?>
     </div>
     <div class="col-lg-4 col-sm-12 col-md-4  sidenav">
       <div class="well">
         <p>Thông tin liên hệ</p><br/>
-        <i>a</i><br/>
-        <i>b</i><br/>
-        <i>c</i><br/>
-        <i>d</i><br/>
+        <ul class="contact-footer" style="text-align: left;list-style: none;">
+           <li><i class="icon-location"></i> Địa chỉ : <?php echo $supports->address?></li>
+           <li><i class="icon-mobile"></i> Điện thoại : <a href="tel:<?php echo $supports->phone?>"><?php echo $supports->phone?></a></li>
+           <li><i class="icon-inbox"></i> Hotline : <a href="tel:<?php echo $supports->hotline?>?>"><?php echo $supports->hotline?></a></li>
+           <li><i class="icon-videocam"></i> Zalo : <?php echo $supports->zalo?></li>
+           <li><i class="icon-mail"></i> E-mail: <a href="mailto:<?php echo $supports->gmail?>"><?php echo $supports->gmail?></a></li>
+         </ul> 
       </div>
       
     </div>

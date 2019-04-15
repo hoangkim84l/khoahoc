@@ -10,18 +10,17 @@
  <div class="row">
   <div class="col-lg-12">
    <div class="promo-block">
-    <div class="promo-text">Giới thiệu</div>
+    <div class="promo-text"></div>
   </div>
 </div>
-</div>
+</div><br/>
 </div>
 <div class="cus-">
  <div class="row">
   <div class="col-lg-12 col-md-12 col-sm-12 ">
    <div class="introduction"> 
-    <img src="assets/images/team.png">
-    <div class="intro-name">Who We Are?</div>
-    <div class="intro-desc">Pellentesque luctus ac lorem id luctus. Aenean sagittis magna sit amet purus vehicsula. Tristique nunc a felis ultrices phasellus vitae ultrices lectus eget posuere est.</div>
+    <div class="intro-name"><?php echo $info->title?></div>
+    <div class="intro-desc"><?php echo $info->content?>.</div>
   </div>
 </div> 
 </div>

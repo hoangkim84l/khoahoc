@@ -23,7 +23,7 @@ Class Product extends MY_Controller
         $config = array();
         $config['base_url']    = base_url('product/index');
         $config['total_rows']  = $total_rows;
-        $config['per_page']    = 3;
+        $config['per_page']    = 100;
         $config['uri_segment'] = 3;
         $config['next_link']   = "Trang kế tiếp";
         $config['prev_link']   = "Trang trước";
