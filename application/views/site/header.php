@@ -1,27 +1,25 @@
-<div class="top_line">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-6 col-md-7 col-sm-12 col-xs-12 pull-left">
-        <ul class="contact-top">
-          <li><i class="icon-location"></i> 455 Martinson, Los Angeles</li>
-          <li><i class="icon-mobile"></i> 8 (043) 567 - 89 - 30</li>
-          <li><i class="icon-mail"></i> support@email.com</li>
+<div id="headerTop">
+    <div id="language">
+        <a id="languageBtn" href="javascript:void(0);">Ngôn ngữ</a>
+        <ul id="languageList" style="display:none">
+            <li>
+                <a href="de/home.html?fbclid=IwAR28nsNRdrZiJQgS7usL5SF8CIu__p2yfCPpSHgu_kKkRrJMyXGHF9ipyus&amp;cHash=6ab829717af4ffdab850270f8acf6eea">Tiếng việt</a>
+            </li>
+            <li>
+                <a href="en/home.html?fbclid=IwAR28nsNRdrZiJQgS7usL5SF8CIu__p2yfCPpSHgu_kKkRrJMyXGHF9ipyus&amp;cHash=a7d5b5fc2a08eea5a0fb9c101a695f19">English</a>
+            </li>
         </ul>
-      </div>
-      <div class="col-lg-6 col-md-5 pull-right hidden-phone">
-        <ul class="social-links">
-          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-          <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-          <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-          <li><a href="#"><i class="fa fa-vk"></i></a></li>
-          <li id="search-btn"><a href="#"><i class="icon-search"></i></a></li>
-        </ul>
-        <div class="search-input" id="search-input" style="display: none;">
-          <input id="s-input" type="text" placeholder="Search...">
-        </div>
-      </div> 
     </div>
-  </div>
+    <div id="topLinks">
+        <ul>
+            <li>
+                <a href="en/meta-navigation-header/news.html" onfocus="blurLink(this);">Tin tức</a>
+            </li>
+        </ul>
+    </div>
+    <div class="clear"></div>
+</div>
+<div id="logo">
+    <img title="DURAN GROUP" alt="DURAN GROUP" src="fileadmin/templates/images/logo.gif"/>
+    <h1>DURAN GROUP</h1>
 </div>

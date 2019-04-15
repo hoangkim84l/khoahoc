@@ -1,41 +1,37 @@
-<div class="nav-container" style="height: auto;">
-  <nav>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-3 pull-left"><div class="logo"><a href="index-2.html"><img src="<?php echo public_url()?>site/assets/images/logo.png" alt=""></a></div></div>
-        <div class="col-lg-9 pull-right">
-          <div class="menu">
-            <div id="dl-menu" class="dl-menuwrapper">
-              <button class="dl-trigger">Open Menu</button>
-              <ul class="dl-menu">
-                <li class="current"><a href="#">Trang chủ</a></li>
-                <li><a href="#">Giới thiệu</a></li>                
-                <li><a href="#">Sản phẩm</a>
-                  <ul class="dl-submenu">
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="contacts.html">Contact</a></li>
-                    <li><a href="pricing_tables.html">Pricing Tables</a></li>
-                    <li><a href="404.html">404 Error</a></li>
-                    <li><a href="faq.html">F.A.Q</a></li>
-                    <li>
-                      <a href="#">Third Level Menu</a>
-                      <ul class="dl-submenu">
-                        <li><a href="#">Sublevel Title</a></li>
-                        <li><a href="#">Another Menu</a></li>
-                        <li><a href="#">And One More</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-                <li><a href="#">Dịch vụ</a></li>
-                <li><a href="#">Bài viết</a></li>
-                <li><a href="contact">Liên hệ</a></li>
-              </ul>
-            </div> 
-          </div>        
+<ul class="navigation">
+    <li id="subMenu12">
+        <a href="<?php echo base_url()?>" class="homepage" onfocus="blurLink(this);" class="current">Trang chủ</a>
+    </li>
+    <li id="subMenu536">
+        <a href="<?php echo base_url()?>thong-tin-ve-chung-toi.html" class="introduce" onfocus="blurLink(this);">Giới thiệu</a>
+    </li>
+    <li id="subMenu40">
+        <a href="<?php echo base_url()?>san-pham.html" class="product" onfocus="blurLink(this);">Sản phẩm</a>
+        <div class="subNav">
+            <ul>
+            <?php foreach ($catalog_list as $row):?>
+               <li style="border-bottom: 1px solid #ccc;width: 110px;">
+                 <a href="<?php echo base_url('san-pham/danh-muc/'.$row->id)?>"  onfocus="blurLink(this);" title="<?php echo $row->name?>"><?php echo $row->name?></a>
+                 <?php if(!empty($row->subs)):?>
+                 <!-- lay danh sach danh muc con -->
+                 <ul class="catalog-sub">  
+                        <?php foreach ($row->subs as $sub):?>                                           
+                        <li>
+                            <a href="<?php echo base_url('san-pham/danh-muc/'.$sub->id)?>"  onfocus="blurLink(this);" title="<?php echo $sub->name?>"> 
+                            <?php echo $sub->name?></a>
+                        </li>
+                        <?php endforeach;?>                                     
+                 </ul>
+                 <?php endif;?>
+              </li>
+              <?php endforeach;?>  
+
+            </ul>
         </div>
-      </div>
-    </div>
-  </nav>
-</div>
+    </li>
+    <li id="subMenu40">
+        <a href="<?php echo base_url()?>dich-vu.html" class="service" onfocus="blurLink(this);">Dịch vụ </a>
+    <li id="subMenu509">
+        <a href="<?php echo base_url()?>lien-he.html" class="contact" onfocus="blurLink(this);">Liên hệ</a>
+    </li>
+</ul>
