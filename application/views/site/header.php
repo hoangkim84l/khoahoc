@@ -1,27 +1,21 @@
-<div class="top_line">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-6 col-md-7 col-sm-12 col-xs-12 pull-left">
-        <ul class="contact-top">
-          <li><i class="icon-location"></i> 455 Martinson, Los Angeles</li>
-          <li><i class="icon-mobile"></i> 8 (043) 567 - 89 - 30</li>
-          <li><i class="icon-mail"></i> support@email.com</li>
-        </ul>
-      </div>
-      <div class="col-lg-6 col-md-5 pull-right hidden-phone">
-        <ul class="social-links">
-          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-          <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-          <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-          <li><a href="#"><i class="fa fa-vk"></i></a></li>
-          <li id="search-btn"><a href="#"><i class="icon-search"></i></a></li>
-        </ul>
-        <div class="search-input" id="search-input" style="display: none;">
-          <input id="s-input" type="text" placeholder="Search...">
-        </div>
-      </div> 
+<div id="headerTop">
+    <div id="language">
+        <form>
+            <input type="text" name="search" placeholder="Nhập tên sản phẩm" />
+            <input type="submit" name="search" value="Tìm kiếm" class="btn btn-default">
+        </form>
+        
     </div>
-  </div>
+    <div id="topLinks">
+        <ul>
+            <li>
+                <a href="en/meta-navigation-header/news.html" onfocus="blurLink(this);">Tin tức</a>
+            </li>
+        </ul>
+    </div>
+    <div class="clear"></div>
+</div>
+<div id="logo">
+    <img title="DURAN GROUP" alt="DURAN GROUP" src="fileadmin/templates/images/logo.gif"/>
+    <h1>DURAN GROUP</h1>
 </div>

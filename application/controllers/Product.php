@@ -23,7 +23,7 @@ Class Product extends MY_Controller
         $config = array();
         $config['base_url']    = base_url('product/index');
         $config['total_rows']  = $total_rows;
-        $config['per_page']    = 3;
+        $config['per_page']    = 100;
         $config['uri_segment'] = 3;
         $config['next_link']   = "Trang kế tiếp";
         $config['prev_link']   = "Trang trước";
@@ -127,7 +127,7 @@ Class Product extends MY_Controller
     function view()
     {
         //lay id san pham muon xem
-        $id = $this->uri->rsegment(3);
+        $id = $this->uri->rsegment(4);
         $product = $this->product_model->get_info($id);
         if(!$product) redirect();
         //lấy số điểm trung bình đánh giá
