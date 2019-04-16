@@ -12,22 +12,14 @@ Class Home extends MY_Controller
 		$maxView = $this->service_model->get_list($input);
 		$this->data['maxView']  = $maxView;
 		
+		//San pham moi
+		$this->load->model('product_model');
+		$input = array();
+		$input['limit'] = array(6, 0);	    
+		$input['order'] = array('view', 'DESC');
+		$maxView = $this->product_model->get_list($input);
+		$this->data['maxView']  = $maxView;
 
-		  //Bài viết mới
-		$this->load->model('news_model');
-		$input = array();
-		$input['limit'] = array(2, 0);	    
-		$input['order'] = array('count_view', 'DESC');
-		$maxViewNews = $this->news_model->get_list($input);
-		$this->data['maxViewNews']  = $maxViewNews;
-		  //Bài viết mới được setup ra trang chủ
-		$this->load->model('news_model');
-		$input = array();
-		$input['where'] = array('is_home' => 0);
-		$input['order'] = array('id', 'DESC');
-		$input['limit'] = array(4, 0);
-		$isHomeNews = $this->news_model->get_list($input);
-		$this->data['isHomeNews']  = $isHomeNews;
 		
 		  //lay noi dung gioi thieu web
 		$this->load->model('introduce_model');

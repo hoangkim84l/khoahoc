@@ -57,5 +57,8 @@
 		if(secondLevelLocation === "san-pham"){
 			$(".product").addClass("current");
 		}
+		if(secondLevelLocation === "dich-vu"){
+			$(".service").addClass("current");
+		}
 	</script>
 </html>

@@ -10,7 +10,41 @@
     </div>
   </div>
 </div>
-<div id="mainCon" class="col-sm-12 col-lg-6 col-md-6">
+<div id="sideLeft" class="col-lg-3 border col-sm-12col-md-3">
+    <ul id="menuTree">
+        <li>
+            <strong><a href="#" onfocus="blurLink(this);" class="current">Danh mục sản phẩm</a></strong>
+            <ul>
+                <?php foreach ($catalog_list as $row):?>
+               <li>
+                 <a href="<?php echo base_url('san-pham/danh-muc/'.$row->id)?>"  onfocus="blurLink(this);" title="<?php echo $row->name?>"><?php echo $row->name?></a>
+                 <?php if(!empty($row->subs)):?>
+                 <!-- lay danh sach danh muc con -->
+                 <ul class="catalog-sub">  
+                        <?php foreach ($row->subs as $sub):?>                                           
+                        <li>
+                            <a href="<?php echo base_url('san-pham/danh-muc/'.$sub->id)?>"  onfocus="blurLink(this);" title="<?php echo $sub->name?>"> 
+                            <?php echo $sub->name?></a>
+                        </li>
+                        <?php endforeach;?>                                     
+                 </ul>
+                 <?php endif;?>
+              </li>
+              <?php endforeach;?>  
+            </ul>
+            <span></span>
+        </li>
+        <li>
+            <strong><a href="#" onfocus="blurLink(this);">Tư vấn</a></strong>
+            <ul>
+                <li><a href="<?php echo base_url()?>dich-vu.html" onfocus="blurLink(this);">Dịch vụ</a></li>
+                <li><a href="<?php echo base_url()?>lien-he.html" onfocus="blurLink(this);">Liên hệ</a></li>
+            </ul>
+            <span></span></li>
+    </ul>
+    <span></span>
+</div>
+<div id="mainContent" class="col-sm-12 col-lg-4 col-md-4">
   <div id="mainBanner_twoColumn">
   </div>
   <div id="mainCon_bottom" class="border mb">
@@ -43,7 +77,7 @@
       </div>
     </div>
   </div>
-  <div id="sidebar" class="col-lg-5 col-md-5 col-sm-12">
+  <div id="sidebar" class="col-lg-4 col-md-4 col-sm-12">
     <div id="seite" class="border mb">
       <div class="tx-extrecommend-pi1">
 
