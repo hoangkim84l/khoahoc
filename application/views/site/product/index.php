@@ -26,7 +26,7 @@
         <div id="c79" class="csc-default">
           <div class="csc-textpic csc-textpic-center csc-textpic-above">
             <div class="csc-textpic-imagewrap csc-textpic-single-image" style="width:278px;">
-              <img src="<?php echo base_url('upload/product/'.$row->image_link)?>" width="278" height="81" alt="" style="float: left;" /></div>
+              <img src="<?php echo base_url('upload/product/'.$row->image_link)?>" width="320" height="210" alt="<?php echo $row->name?>" style="float: left;" /></div>
               <div class="csc-textpic-text">
                 <p class="bodytext"><span style="font-weight: bold;"></span>
                 </p>

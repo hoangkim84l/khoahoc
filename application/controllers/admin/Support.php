@@ -105,10 +105,16 @@ class Support extends MY_Controller {
 			$this->load->library('upload_library');
 			$upload_path = './upload/logo';
 			$upload_data = $this->upload_library->upload($upload_path, 'image');
+			$upload_data_banner = $this->upload_library->upload($upload_path, 'banner');
 			$image = '';
+			$image_banner = '';
 			if(isset($upload_data['file_name']))
 			{
 				$image = $upload_data['file_name'];
+			}
+			if(isset($upload_data_banner['file_name']))
+			{
+				$image_banner = $upload_data_banner['file_name'];
 			}
             //lay du lieu ma admin nhap vao form
             $data = array();
@@ -128,7 +134,10 @@ class Support extends MY_Controller {
                 {
                     $data['image_link'] = $image;
 				}
-				
+			if($image_banner != '')
+                {
+                    $data['banner'] = $image_banner;
+				}	
             if($this->support_model->update($id, $data))
             {
                 //gui thong bao thanh cong

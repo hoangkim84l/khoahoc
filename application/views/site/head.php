@@ -20,8 +20,34 @@
         <script src="<?php echo public_url()?>site/js/jquery.js" type="text/javascript"></script>
         <script src="<?php echo public_url()?>site/js/googleAnalytics.js" type="text/javascript"></script>
         <script src="<?php echo public_url()?>site/js/thickbox.js" type="text/javascript"></script>
-        <script src="<?php echo public_url()?>site/js/javascript_757c080409.js?1523958161" type="text/javascript"></script>
-        <title>DURAN &#160;-&#160;Home</title>
+        <script src="<?php echo public_url()?>site/js/javascript_757c080409.js" type="text/javascript"></script>
+        <title>
+            <?php if(isset($info)){ 
+                echo $info->title;}
+            else if(isset($product)){
+                echo $product->site_title;
+            }else {echo "Thủy tinh cao cấp";}?>
+        </title>
+        <meta name="keywords" content="<?php if(isset($info)){ 
+                                                    echo $info->title;
+                                                     echo $info->meta_key;
+                                                    
+                                        }
+                                        else if(isset($product)){
+                                             echo $product->name;
+                                              echo $product->meta_key;
+                                        }
+                                        else{echo "<br/> Thủy tinh cao cấp.";}?>" />
+        <meta name="description" content="<?php if(isset($info)){ 
+                                                    //echo $info->title;
+                                                    echo $info->meta_desc;
+                                                    
+                                        }
+                                        else if(isset($product)){
+                                             //echo $product->name;
+                                             echo $product->meta_desc;
+                                        }
+                                        else{echo "Thủy tinh cao cấp.";}?>" />
         <script type="text/javascript" src="<?php echo public_url()?>site/js/slideshow.js"></script>
         <link type="text/css" media="screen" rel="stylesheet" href="<?php echo public_url()?>site/css/colorbox.css"/>
         <script type="text/javascript" src="<?php echo public_url()?>site/js/jquery.colorbox.js"></script>
@@ -60,7 +86,7 @@
                 }
             }
         </style>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+        <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script> -->
         <script>
             window.addEventListener("load", function() {
                 window.cookieconsent.initialise({
@@ -92,7 +118,7 @@
             });
         </script>
         <!-- Facebook Pixel Code -->
-        <script>
+      <!--   <script>
             !function(f, b, e, v, n, t, s) {
                 if (f.fbq)
                     return;
@@ -115,12 +141,11 @@
             }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
             fbq('init', '281919352679919');
             fbq('track', 'PageView');
-        </script>
-        <noscript>
+        </script> -->
+        <!-- <noscript>
             <img height="1" width="1" src="https://www.facebook.com/tr?id=281919352679919&ev=PageView
 &noscript=1"/>
         </noscript>
-        <!-- End Facebook Pixel Code -->
         <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
@@ -130,4 +155,4 @@
                 var pageTracker = _gat._getTracker("UA-8310365-1");
                 pageTracker._trackPageview();
             } catch (err) {}
-        </script>
+        </script> -->

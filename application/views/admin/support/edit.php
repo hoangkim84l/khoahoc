@@ -114,7 +114,17 @@
                      </div>
                      <div class="clear"></div>
                   </div>
-
+                <div class="formRow">
+                     <label class="formLeft">Banner:</label>
+                     <div class="formRight">
+                        <div class="left">
+                           <input type="file" name="banner" id="banner" size="25">
+                           <img src="<?php echo base_url('upload/logo/'.$info->banner)?>" style="width:100px;height:70px">
+                        </div>
+                        <div class="clear error" name="image_error"></div>
+                     </div>
+                     <div class="clear"></div>
+                  </div>  
            		<div class="formSubmit">
            			<input type="submit" value="<?php echo lang('button_update'); ?>" class="redB" />
            			<input type="reset" value="<?php echo lang('button_reset'); ?>" class="basic" />

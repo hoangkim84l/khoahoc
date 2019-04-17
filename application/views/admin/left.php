@@ -2,10 +2,10 @@
    <!-- Account panel -->
    <div class="sideProfile">
       <a href="#" title="" class="profileFace">
-      <img src="<?php echo public_url('admin')?>/images/user.png" width="40">
+         <img src="<?php echo public_url('admin')?>/images/user.png" width="40">
       </a>
       <span>Xin chào:
-      <strong>admin!</strong>
+         <strong>admin!</strong>
       </span>
       <div class="clear"></div>
    </div>
@@ -14,8 +14,8 @@
    <ul id="menu" class="nav">
       <li class="home">
          <a href="<?php echo admin_url()?>" class="active" id="current">
-         <span>Bảng điều khiển</span>
-         <strong></strong>
+            <span>Bảng điều khiển</span>
+            <strong></strong>
          </a>
       </li>
      <!--  <li class="tran">
@@ -42,38 +42,64 @@
          <ul style="display: none;" class="sub">
             <li>
                <a href="<?php echo admin_url('product')?>">
-               Sản phẩm                         
+                  Sản phẩm                         
                </a>
             </li>
             <li>
                <a href="<?php echo admin_url('catalog')?>">
-               Danh mục                         
+                  Danh mục                         
                </a>
             </li>
          </ul>
          
-         </li>
+      </li>
+      <li class="product">
+         <a href="#" class="exp inactive">
+            <span>Giới thiệu</span>
+            <strong>1</strong>
+         </a>    
+         <ul style="display: none;" class="sub">
+            <li>
+               <a href="<?php echo admin_url('introduce')?>">
+                  Giới thiệu
+               </a>
+            </li>
+         </ul> 
+      </li>
+      <li class="product">
+         <a href="#" class="exp inactive">
+            <span>Dịch vụ</span>
+            <strong>1</strong>
+         </a>
+         <ul style="display: none;" class="sub">
+            <li class="product">
+               <a href="<?php echo admin_url('service')?>">
+                  Dịch vụ
+               </a>
+            </li>
+         </ul>
+      </li>
       <li class="account">
          <a href="" class="exp inactive">
-         <span>Tài khoản</span>
-         <strong>1</strong>
+            <span>Tài khoản</span>
+            <strong>1</strong>
          </a>
          <ul style="display: none;" class="sub">
             <li>
                <a href="<?php echo admin_url('admin')?>">
-               Ban quản trị
+                  Ban quản trị
                </a>
             </li>
             <!-- <li>
                <a href="<?php echo admin_url('user')?>">
                 Thành viên </a>
-               </li> -->
-         </ul>
-      </li>
-      <li class="support">
+             </li> -->
+          </ul>
+       </li>
+       <li class="support">
          <a href="" class="exp inactive">
-         <span>Hỗ trợ và liên hệ</span>
-         <strong>2</strong>
+            <span>Hỗ trợ và liên hệ</span>
+            <strong>2</strong>
          </a>
          <ul style="display: none;" class="sub">
             <li>
@@ -88,30 +114,22 @@
       </li>
       <li class="content">
          <a href="" class="exp inactive">
-         <span>Nội dung</span>
-         <strong>4</strong>
+            <span>Nội dung</span>
+            <strong>1</strong>
          </a>
          <ul style="display: none;" class="sub">
-            <li>
-               <a href="<?php echo admin_url('introduce')?>">
-               Giới thiệu
-               </a>
-            </li>
+
             <li>
                <a href="<?php echo admin_url('slide')?>">
-               Slide
+                  Slide
                </a>
             </li>
-            <li>
+            <!-- <li>
                <a href="<?php echo admin_url('news')?>">
-               Tin tức
+                  Tin tức
                </a>
-            </li>
-            <li>
-               <a href="<?php echo admin_url('service')?>">
-               Dịch vụ
-               </a>
-            </li>
+            </li> -->
+            
          </ul>
       </li>
    </ul>

@@ -7,8 +7,8 @@
 </head>
 <body>
 	<div class="dwkheader">
-        <a href="/en/dwklifesciences.html" class="dwkheader_link">
-            <img src="/fileadmin/templates/images/dwk_top-banner_ccc_en.png" class="dwkheader_img"/>
+        <a href="#" class="dwkheader_link">
+            <img src="<?php echo base_url('upload/logo/'.$supports->banner)?>" class="dwkheader_img"/>
         </a>
     </div>
 	<div id="layout">		

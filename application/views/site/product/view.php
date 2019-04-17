@@ -14,7 +14,7 @@
                     <li><a href="#" onfocus="blurLink(this);">Sản phẩm mới</a></li>
                     <li><a href="#" onfocus="blurLink(this);">Sản phẩm xem nhiều nhất</a></li>
                 </ul><span></span></li>
-            <li><strong><a href="en/products-solutions/laboratory-glassware/duranr-properties-quality-features.html" onfocus="blurLink(this);">Danh mục sản phẩm</a></strong>
+            <li><strong><a href="#" onfocus="blurLink(this);">Danh mục sản phẩm</a></strong>
             	<ul>
             		<?php foreach ($catalog_list as $row):?>
 		               <li>
@@ -34,7 +34,7 @@
 		            <?php endforeach;?>  
             	</ul>
             </li>
-            <li><strong><a href="en/products-solutions/laboratory-glassware/service.html" onfocus="blurLink(this);">Tư vấn</a></strong>
+            <li><strong><a href="#" onfocus="blurLink(this);">Tư vấn</a></strong>
                 <ul>
                     <li><a href="<?php echo base_url()?>dich-vu.html" onfocus="blurLink(this);">Dịch vụ</a></li>
                 	<li><a href="<?php echo base_url()?>lien-he.html" onfocus="blurLink(this);">Liên hệ</a></li>
@@ -59,7 +59,8 @@
             <a id="c1765"></a>
             <div id="c403" class="csc-default">
                 <div class="csc-textpic csc-textpic-center csc-textpic-above">
-                    <div class="csc-textpic-imagewrap csc-textpic-single-image" style="width:440px;"><img src="<?php echo base_url('upload/product/'.$product->image_link)?>" width="440" height="70" alt=""></div>
+                    <div class="csc-textpic-imagewrap csc-textpic-single-image" style="width:440px;">
+                        <img src="<?php echo base_url('upload/product/'.$product->image_link)?>" width="320" height="210" alt="<?php echo $product->name?>"></div>
                 </div>
                 <div class="csc-textpic-clear">
                 </div>
