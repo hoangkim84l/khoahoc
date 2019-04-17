@@ -51,7 +51,7 @@ select,textarea {font-family:Helvetica, Verdana, Arial;font-size: 11px;}
 #logo h1{ display:none;}
 
 /*===navigation===*/
-#navigation { background:#01ace0 url(../../images/navBg.jpg) no-repeat 0 0; height:40px;width:920px;}
+#navigation { background:#01ace0 url(../../images/navBg.jpg) no-repeat 0 0; height:40px;margin-left: 10px;width: 840px;}
 .navigation li { float:left; position:relative;width:110px; display:inline; /*overflow:hidden;*/ height:40px; z-index:30;}
 .navigation li:hover > div { visibility:visible !important;}
 .navigation li a {float:left; height:40px;line-height:40px; font-size:16px; color:#fff; text-align:center; background:url(../../images/navBg-hover.gif) no-repeat; background-position:0 40px;}

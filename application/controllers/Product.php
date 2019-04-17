@@ -193,7 +193,50 @@ Class Product extends MY_Controller
             $this->load->view('site/layout', $this->data);
         }
     }
-    
+    /**
+    * order by newest
+    */
+    function newest(){
+        //lay thong tin cua danh mục san pham
+        $catalog = $this->catalog_model->get_list();
+        $this->data['catalog'] = $catalog;
+
+        $total_rows = $this->product_model->get_total();
+        $this->data['total_rows'] = $total_rows;
+
+        $input['order'] = array('created', 'DESC');
+        $product_buy = $this->product_model->get_list($input);
+        $this->data['list']  = $product_buy;
+        
+        //lay nội dung của biến message
+        $message = $this->session->flashdata('message');
+        $this->data['message'] = $message;
+        
+        $this->data['temp'] = 'site/product/newest';
+        $this->load->view('site/layout', $this->data);
+    }
+    /**
+    * order by view hightest
+    */
+    function viewest(){
+        //lay thong tin cua danh mục san pham
+        $catalog = $this->catalog_model->get_list();
+        $this->data['catalog'] = $catalog;
+
+        $total_rows = $this->product_model->get_total();
+        $this->data['total_rows'] = $total_rows;
+
+        $input['order'] = array('view', 'DESC');
+        $product_buy = $this->product_model->get_list($input);
+        $this->data['list']  = $product_buy;
+        
+        //lay nội dung của biến message
+        $message = $this->session->flashdata('message');
+        $this->data['message'] = $message;
+        
+        $this->data['temp'] = 'site/product/viewest';
+        $this->load->view('site/layout', $this->data);
+    }
     /*
      * Tim kiem theo gia san pham
      */

@@ -9,10 +9,10 @@
 <div id="main" class="mb">
     <div id="sideLeft" class="col-lg-3 col-sm-12 col-md-3 border">
         <ul id="menuTree">
-            <li><strong><a href="en/products-solutions/laboratory-glassware/products.html" onfocus="blurLink(this);">Sản phẩm</a></strong>
+            <li><strong><a href="#" onfocus="blurLink(this);">Sản phẩm</a></strong>
                 <ul>
-                    <li><a href="#" onfocus="blurLink(this);">Sản phẩm mới</a></li>
-                    <li><a href="#" onfocus="blurLink(this);">Sản phẩm xem nhiều nhất</a></li>
+                    <li><a href="<?=site_url('san-pham-moi-nhat.html')?>" onfocus="blurLink(this);">Sản phẩm mới</a></li>
+                    <li><a href="<?=site_url('san-pham-xem-nhieu-nhat.html')?>" onfocus="blurLink(this);">Sản phẩm xem nhiều nhất</a></li>
                 </ul><span></span></li>
             <li><strong><a href="#" onfocus="blurLink(this);">Danh mục sản phẩm</a></strong>
             	<ul>

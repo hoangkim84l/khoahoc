@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th4 10, 2019 lúc 10:46 AM
+-- Thời gian đã tạo: Th4 17, 2019 lúc 09:27 AM
 -- Phiên bản máy phục vụ: 10.1.37-MariaDB
 -- Phiên bản PHP: 7.2.12
 
@@ -304,9 +304,9 @@ CREATE TABLE `product` (
 --
 
 INSERT INTO `product` (`id`, `catalog_id`, `name`, `slug_name`, `maker_id`, `price`, `content`, `discount`, `image_link`, `image_list`, `created`, `view`, `meta_key`, `site_title`, `warranty`, `total`, `buyed`, `rate_total`, `rate_count`, `gifts`, `video`, `meta_desc`, `feature`) VALUES
-(1, 1, 'Ống nghiệm cổ cao', NULL, 0, '200000.0000', '<p>\r\n	kh&ocirc;ng</p>\r\n', 0, '131111hinh-nen-vuon-hoa-tim-luc-hoang-hon-do-net-cao.jpg', '[\"hinh-anh-bien-hoang-hon-buon-khien-tam-hon-lay-dong-1.jpg\",\"hinh-nen-hoang-hon-dep-1.jpg\",\"tong-hop-hinh-nen-binh-minh-va-hoang-hon-tren-bien-dep-lang-man-tho-mong-nhat-the-gioi-1.jpg\"]', 1545979642, 0, 'không', 'không', 'không', 0, 0, 0, 0, 'không', '', 'không', '0'),
-(2, 2, 'product 2.1', 'product-21', 0, '10000.0000', '<p>\r\n	0</p>\r\n', 0, 'hinh-anh-bien-hoang-hon-buon-khien-tam-hon-lay-dong-11.jpg', '[\"hinh-nen-hoang-hon-dep-11.jpg\",\"tong-hop-hinh-nen-binh-minh-va-hoang-hon-tren-bien-dep-lang-man-tho-mong-nhat-the-gioi-11.jpg\"]', 1554864824, 0, '0', '0', '0', 0, 0, 0, 0, '0', '', '0', '0'),
-(3, 1, 'title 1 2', 'title-1-2', 0, '9000.0000', '<p>\r\n	0</p>\r\n', 0, '131111hinh-nen-vuon-hoa-tim-luc-hoang-hon-do-net-cao1.jpg', '[\"34127612_1047920818696649_1645593346250375168_n.jpg\",\"hinh-anh-bien-hoang-hon-buon-khien-tam-hon-lay-dong-12.jpg\"]', 1554867044, 0, '0', '0', '0', 0, 0, 0, 0, '0', '', '0', '0');
+(1, 1, 'Ống nghiệm cổ cao', 'ong-nghiem-co-cao', 0, '200000.0000', '<p>\r\n	kh&ocirc;ng</p>\r\n', 0, 'c9f2611175.jpg', '[\"hinh-anh-bien-hoang-hon-buon-khien-tam-hon-lay-dong-1.jpg\",\"hinh-nen-hoang-hon-dep-1.jpg\",\"tong-hop-hinh-nen-binh-minh-va-hoang-hon-tren-bien-dep-lang-man-tho-mong-nhat-the-gioi-1.jpg\"]', 1545979642, 0, 'không', 'không', 'không', 0, 0, 0, 0, 'không', '', 'không', '0'),
+(2, 2, 'Dụng cụ thí nghiệm', 'dung-cu-thi-nghiem', 0, '10000.0000', '<p>\r\n	0</p>\r\n', 0, '_Eingangsbild_Labor_01.jpg', '[\"hinh-nen-hoang-hon-dep-11.jpg\",\"tong-hop-hinh-nen-binh-minh-va-hoang-hon-tren-bien-dep-lang-man-tho-mong-nhat-the-gioi-11.jpg\"]', 1554864824, 7, '0', '0', '0', 0, 0, 0, 0, '0', '', '0', '0'),
+(3, 1, 'Ống nghiệm tròn', 'ong-nghiem-tron-1', 0, '9000.0000', '<p>\r\n	Chưa c&oacute; nội dung ,...</p>\r\n', 0, 'duran_produktstartseite_consumerglas_02.jpg', '[\"34127612_1047920818696649_1645593346250375168_n.jpg\",\"hinh-anh-bien-hoang-hon-buon-khien-tam-hon-lay-dong-12.jpg\"]', 1554867044, 25, '0', '0', '0', 0, 0, 0, 0, '0', '', '0', '0');
 
 -- --------------------------------------------------------
 
@@ -333,7 +333,7 @@ CREATE TABLE `service` (
 --
 
 INSERT INTO `service` (`id`, `title`, `slug_title`, `intro`, `content`, `meta_desc`, `meta_key`, `image_link`, `created`, `count_view`, `is_home`) VALUES
-(1, 'Hổ trợ nhiệt tình', 'ho-tro-nhiet-tinh-1', 'Hổ trợ nhiệt tình', '<p>\r\n	Hổ trợ nhiệt t&igrave;nh</p>\r\n', 'Hổ trợ nhiệt tình', 'Hổ trợ nhiệt tình', 'tong-hop-hinh-nen-binh-minh-va-hoang-hon-tren-bien-dep-lang-man-tho-mong-nhat-the-gioi-11.jpg', 1554867379, 0, 0);
+(1, 'Hổ trợ nhiệt tình', 'ho-tro-nhiet-tinh-1', 'Hổ trợ nhiệt tình', '<p>\r\n	Hổ trợ nhiệt t&igrave;nh</p>\r\n', 'Hổ trợ nhiệt tình', 'Hổ trợ nhiệt tình', 'tong-hop-hinh-nen-binh-minh-va-hoang-hon-tren-bien-dep-lang-man-tho-mong-nhat-the-gioi-11.jpg', 1554867379, 4, 0);
 
 -- --------------------------------------------------------
 
@@ -356,9 +356,9 @@ CREATE TABLE `slide` (
 --
 
 INSERT INTO `slide` (`id`, `name`, `image_name`, `image_link`, `link`, `info`, `sort_order`) VALUES
-(1, 'Slide 1', '', '11.jpg', 'http://dantri.com.vn/', '0', 1),
-(2, 'Slide 2', '', '21.jpg', 'http://dantri.com.vn/', '', 2),
-(3, 'Slide 3', '', 'hinh-nen-hoang-hon-dep-1.jpg', 'http://dantri.com.vn/', '', 3);
+(1, 'Slide 1', '', 'Bottle_System_Kachel_02.jpg', 'http://www.duran-group.com', '0', 1),
+(2, 'Slide 2', '', 'duran_dwk_catalog_slider_900x300px_en.jpg', 'http://www.duran-group.com', '', 2),
+(3, 'Slide 3', '', 'dwk_slider-banner_ccc_en.gif', 'http://www.duran-group.com', '', 3);
 
 -- --------------------------------------------------------
 
@@ -378,15 +378,16 @@ CREATE TABLE `support` (
   `address` text COLLATE utf8_unicode_ci,
   `meta_key` text COLLATE utf8_unicode_ci,
   `meta_desc` text COLLATE utf8_unicode_ci,
-  `image_link` text COLLATE utf8_unicode_ci
+  `image_link` text COLLATE utf8_unicode_ci,
+  `banner` text COLLATE utf8_unicode_ci
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Đang đổ dữ liệu cho bảng `support`
 --
 
-INSERT INTO `support` (`id`, `name`, `facebook`, `gmail`, `zalo`, `phone`, `sort_order`, `hotline`, `address`, `meta_key`, `meta_desc`, `image_link`) VALUES
-(1, 'Khoa Học', 'sauanhIT', 'test@test.com', '097879578', '09898989', 1, '098687877', '112 hoàng hoa thám, Q1, HCM', 'Khoa học, công nghệ', 'khoa học và công nghệ', 'tong-hop-hinh-nen-binh-minh-va-hoang-hon-tren-bien-dep-lang-man-tho-mong-nhat-the-gioi-1.jpg');
+INSERT INTO `support` (`id`, `name`, `facebook`, `gmail`, `zalo`, `phone`, `sort_order`, `hotline`, `address`, `meta_key`, `meta_desc`, `image_link`, `banner`) VALUES
+(1, 'Khoa Học', 'sauanhIT', 'test@test.com', '097879578', '09898989', 1, '098687877', '112 hoàng hoa thám, Q1, HCM', 'Khoa học, công nghệ', 'khoa học và công nghệ', 'logo.gif', 'dwk_top-banner_ccc_en.png');
 
 -- --------------------------------------------------------
 
