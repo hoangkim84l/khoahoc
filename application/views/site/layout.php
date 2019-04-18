@@ -25,7 +25,7 @@
 			<?php $this->load->view($temp , $this->data);?>
 			<div class="clear"></div>
 		</div>	
-		<div id="footer">
+		<div id="footer" class="row">
 			<?php $this->load->view('site/footer');?>
 		</div> 
 	</div>    
