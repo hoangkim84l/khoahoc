@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+#sideLeft {overflow:hidden; margin-right:10px; background:#ccecf9; display:inline;}
+#mainContent {float:left; background:#fff; padding:5px;}
+#sideRight { width:220px; float:right; overflow:hidden;}
+
+#menuTree {padding-top:10px; height:100%;}
+#menuTree li { float:left; width:100%;    list-style: none;}
+#menuTree li strong { background:#71c9ef; line-height:24px;padding:3px 5px 3px 8px; color:#fff;font-size:12px; font-weight:bold;margin:5px 0; border:solid #e3f4fb; border-width:1px 0;display:block;}
+#menuTree li strong a { color:#fff;}
+#menuTree li ul li a { display:block; background:url(../../images/dot.gif) no-repeat 7px 9px;line-height:20px; color:#004377;padding:0 0 0 18px; font-size:11px; border:0; line-height:20px; margin:0; }
+ul.cert-liste li a { display:block; background:url(../../images/dot.gif) no-repeat 7px 9px;line-height:20px; color:#004377 !important; padding:0 0 0 18px; font-size:11px; border:0; line-height:20px; margin:0; text-decoration:none !important; }
+ul.cert-liste li { list-style: none !important; }
+#menuTree li ul li a:hover, #menuTree li strong a:hover { text-decoration:underline; }
+ul.cert-liste li a:hover { text-decoration:underline !important; background:url(../../images/dot.gif) no-repeat 7px 9px !important; }
+#menuTree li ul li a.current {color:#D32021; font-weight:bold;}
+#bcn { padding:0 0 10px 0; margin-top:-10px;height:auto; }
+#bcn ul {line-height:20px; float:left; width:100%;*margin-bottom:10px;}
+#bcn ul li { float:left;}
+
+#textlist { clear:both;width:430px; overflow:hidden;}
+#textlist h1 {margin-bottom:10px; font-size:22px;}
+#textlist ul li { white-space:normal; list-style:disc; margin: 0 0 0 20px;}
+#textlist ul li  h4 { font-size:16px;}
+#textlist ul li p { color:#000;}
+#textlist ul li a { color:#e53619; text-decoration:underline;}
+#textlist .csc-textpic-above { margin-bottom:20px;}
+#textlist .csc-textpic-above:after,.csc-textpic-intext-left:after {content:'';display:block;clear:both;height:0;visibility:hidden;}
+/*.internal-link {line-height:2em;}*/
+#textlist ul.csc-bulletlist li, #textlist div ul li {padding:0;padding-bottom:5px;}
+#textlist ul.csc-bulletlist li ul { padding:5px 0;}
+
+
+#textlist ol li {list-style:decimal; list-style-position:inside;}
+
+#sideTimebox { background:#ccecf9; padding:10px;color:#024079;}
+#sideTimebox h2 {margin-bottom:25px; font-size:16px;}
+#sideTimebox p { margin-bottom:15px;}
+
+
+#sidebox .csc-textpic-text { padding:5px;}
+#sidebox ul {list-style:none;}
+#sidebox .blue { color:#004177;padding:10px;}
+#sidebox .blue ul li { margin-bottom:15px;list-style:none;}
+#sidebox .blue ul li a, #sidebox .blue div a  { display:block; color:#004177;}
+#sidebox .blue ul li a:hover, #sidebox .blue div a:hover{ text-decoration:underline;}
+#sidebox .text {background:#93D5F2;}
+#sidebox .messe, #sidebox .Cambridg_Blue {background:#4CBCE9;padding:10px;}
+#sidebox .Content-blue {background:#4CBCE9;padding:10px;} /*update 27.03.20009*/
+#sidebox .Content-blue h2 {margin:0;}
+#sidebox .Content-blue .mbImgBox { float:left;display:block;height:auto;margin:0;clear:both;+width:100%;+margin-top:-20px;}
+#sidebox .Content-blue .mbImgBox  img {display:block; margin:10px auto;}
+#sidebox .messe a, #sidebox .text a, #sidebox .Content-blue a {color:#fff; text-decoration:underline;}
+#sidebox .TextAndImg p {clear:both;}
+
+
+.photo , .infomation{border:10px solid #fff;width:200px;overflow:hidden; margin-bottom:10px; background:#fff;}
+.infomation {padding-left:10px; width:190px;}
+.infomation, .infomation p {padding-top:10px;color:#004177;}
+.infomation h4 {font-size:12px;}
+.infomation a {color:#004177;}
+.infomation a:hover { text-decoration:underline;}
+
+
+
+.tx-jppageteaser-pi1-list-entry-image {width:auto;margin-right:10px;}
+.tx-jppageteaser-pi1-list-entry-image img { border:0;}
+div.csc-textpic-center div.csc-textpic-imagewrap .csc-textpic-image  { margin-left:0;}
+
+
+.csc-textpic-text {float:left;width:288px;}
+.csc-textpic-text ul, .tx-jppageteaser-pi1-list-entry-description ul {margin-left:15px;}
+
+.tx-jppageteaser-pi1-list-entry-description ul  {width:255px; float:left;padding-left:15px; margin-left:0;}
+
+#main.mb{margin-bottom:0;}
+div#footer {margin-top:0;}
+#sideLeft,#mainContent {margin-bottom:10px;}
+
+.tx-extteaserboxadv-pi1 .TextAndImg h2 { width: 100% }
+.tx-extteaserboxadv-pi1 .TextAndImg .mbImgBox {width: 100%;}
+.tx-extteaserboxadv-pi1 .TextAndImg p {float:left;}
