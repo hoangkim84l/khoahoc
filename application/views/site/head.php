@@ -12,7 +12,7 @@
         <link rel="stylesheet" type="text/css" href="<?php echo public_url()?>site/css/print.css" media="print"/>
         <link rel="stylesheet" type="text/css" href="<?php echo public_url()?>site/css/thickbox.css" media="screen"/>
         <link rel="stylesheet" type="text/css" href="<?php echo public_url()?>site/css/kw.css" media="screen"/>
-        <link rel="stylesheet" type="text/css" href="<?php echo public_url()?>site/css/custom_v1.css" media="screen"/>
+        <link rel="stylesheet" type="text/css" href="<?php echo public_url()?>site/css/custom.css?ver=1" media="screen"/>
         <link rel="stylesheet" type="text/css" href="<?php echo public_url()?>site/css/info.css" media="screen"/>
         <script src="<?php echo public_url()?>site/js/common.js" type="text/javascript"></script>
         <script src="<?php echo public_url()?>site/js/swfobject.js" type="text/javascript"></script>
