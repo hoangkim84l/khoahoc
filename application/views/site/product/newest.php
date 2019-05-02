@@ -12,10 +12,14 @@
 </div>
 <div id="sideLeft" class="col-lg-3 border col-sm-12col-md-3">
     <ul id="menuTree">
-        <li>
-            <strong><a href="#" onfocus="blurLink(this);" class="currents">Danh mục sản phẩm</a></strong>
-            <ul>
-                <?php foreach ($catalog_list as $row):?>
+        <li><strong class="collapsible">Sản phẩm</strong>
+            <ul class="content">
+                <li><a href="<?=site_url('san-pham-moi-nhat.html')?>" onfocus="blurLink(this);">Sản phẩm mới</a></li>
+                <li><a href="<?=site_url('san-pham-xem-nhieu-nhat.html')?>" onfocus="blurLink(this);">Sản phẩm xem nhiều nhất</a></li>
+            </ul><span></span></li>
+        <li><strong class="collapsible">Danh mục sản phẩm</strong>
+          <ul class="content">
+            <?php foreach ($catalog_list as $row):?>
                <li>
                  <a href="<?php echo base_url('san-pham/danh-muc/'.$row->id)?>"  onfocus="blurLink(this);" title="<?php echo $row->name?>"><?php echo $row->name?></a>
                  <?php if(!empty($row->subs)):?>
@@ -30,17 +34,16 @@
                  </ul>
                  <?php endif;?>
               </li>
-              <?php endforeach;?>  
-            </ul>
-            <span></span>
+            <?php endforeach;?>  
+          </ul>
         </li>
-        <li>
-            <strong><a href="#" onfocus="blurLink(this);">Tư vấn</a></strong>
-            <ul>
+        <li><strong class="collapsible">Tư vấn</strong>
+            <ul class="content">
                 <li><a href="<?php echo base_url()?>dich-vu.html" onfocus="blurLink(this);">Dịch vụ</a></li>
                 <li><a href="<?php echo base_url()?>lien-he.html" onfocus="blurLink(this);">Liên hệ</a></li>
             </ul>
-            <span></span></li>
+            <span></span>
+          </li>
     </ul>
     <span></span>
 </div>
@@ -59,8 +62,8 @@
       <?php foreach($list as $row):?>
         <div id="c79" class="csc-default">
           <div class="csc-textpic csc-textpic-center csc-textpic-above">
-            <div class="csc-textpic-imagewrap csc-textpic-single-image" style="width:278px;">
-              <img src="<?php echo base_url('upload/product/'.$row->image_link)?>" width="320" height="210" alt="<?php echo $row->name?>" style="float: left;" /></div>
+            <div class="csc-textpic-imagewrap csc-textpic-single-image" style="width:340px;">
+              <img src="<?php echo base_url('upload/product/'.$row->image_link)?>" class="img-rounded" width="304" height="236" style="margin: 0 auto;"  alt="<?php echo $row->name?>"/></div>
               <div class="csc-textpic-text">
                 <p class="bodytext"><span style="font-weight: bold;"></span>
                 </p>

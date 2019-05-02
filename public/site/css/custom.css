@@ -26,8 +26,24 @@ a{
 }
 .custom-content p{
 	text-align: left;
-	margin-left: -25px;
+	margin-left: -30px;
     }
+.collapsible {
+  cursor: pointer;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #71c9ef;
+}
+
+.content {
+  padding: 0 5px;
+  display: none;
+  overflow: hidden;
+  /*background-color: #f1f1f1;*/
+}
 
 @media only screen 
 and (min-device-width : 375px) 
@@ -48,6 +64,7 @@ and (max-device-width : 667px) {
   #mainBanner_oneColumn, #mainBanner_oneColumn ul li {
     height: 150px !important;
   }
+  #rightBot,#sidebox{width:385px;}
 }
 .current{
     background: red;

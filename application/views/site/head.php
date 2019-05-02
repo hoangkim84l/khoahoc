@@ -12,7 +12,7 @@
         <link rel="stylesheet" type="text/css" href="<?php echo public_url()?>site/css/print.css" media="print"/>
         <link rel="stylesheet" type="text/css" href="<?php echo public_url()?>site/css/thickbox.css" media="screen"/>
         <link rel="stylesheet" type="text/css" href="<?php echo public_url()?>site/css/kw.css" media="screen"/>
-        <link rel="stylesheet" type="text/css" href="<?php echo public_url()?>site/css/custom.css?ver=1" media="screen"/>
+        <link rel="stylesheet" type="text/css" href="<?php echo public_url()?>site/css/custom.css?ver=4" media="screen"/>
         <link rel="stylesheet" type="text/css" href="<?php echo public_url()?>site/css/info.css" media="screen"/>
         <script src="<?php echo public_url()?>site/js/common.js" type="text/javascript"></script>
         <script src="<?php echo public_url()?>site/js/swfobject.js" type="text/javascript"></script>
@@ -91,72 +91,3 @@
                   $('#myCarousel').carousel();
                 });
         </script>
-        <!-- <script>
-            window.addEventListener("load", function() {
-                window.cookieconsent.initialise({
-                    "palette": {
-                        "popup": {
-                            "background": "#189DD9",
-                            "text": "#ffffff"
-                        },
-                        "button": {
-                            "background": "#ffffff",
-                            "text": "#189DD9"
-                        }
-                    },
-                    "position": "bottom",
-                    "content": {
-                        "message": "We use Cookies on this Website to enhance the user experience and provide the best possible Service. By continuing to browse this Website, you consent to our use of Cookies.",
-                        "dismiss": "OK",
-                        "link": "Learn more",
-                        "href": "/en/meta-navigation-footer/data-protection.html"
-                    },
-                    "elements": {
-                        link: '<a aria-label="{{link}}" tabindex="0" class="cc-link thickbox" href="{{href}}" target="_blank">{{link}}</a>'
-                    },
-                    onPopupOpen: function(status) {
-                        tb_init(".cc-link");
-                    }
-
-                })
-            });
-        </script> -->
-        <!-- Facebook Pixel Code -->
-      <!--   <script>
-            !function(f, b, e, v, n, t, s) {
-                if (f.fbq)
-                    return;
-                n = f.fbq = function() {
-                    n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-                }
-
-                ;
-                if (!f._fbq)
-                    f._fbq = n;
-                n.push = n;
-                n.loaded = !0;
-                n.version = '2.0';
-                n.queue = [];
-                t = b.createElement(e);
-                t.async = !0;
-                t.src = v;
-                s = b.getElementsByTagName(e)[0];
-                s.parentNode.insertBefore(t, s)
-            }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
-            fbq('init', '281919352679919');
-            fbq('track', 'PageView');
-        </script> -->
-        <!-- <noscript>
-            <img height="1" width="1" src="https://www.facebook.com/tr?id=281919352679919&ev=PageView
-&noscript=1"/>
-        </noscript>
-        <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-        </script>
-        <script type="text/javascript">
-            try {
-                var pageTracker = _gat._getTracker("UA-8310365-1");
-                pageTracker._trackPageview();
-            } catch (err) {}
-        </script> -->

@@ -14,9 +14,9 @@
     </div>
     <div class="clear"></div>
 </div> -->
-<div id="logo" style="margin-top: 10px;">
+<div id="logo" style="">
     <a href="<?=site_url()?>">
-        <img title="<?=$supports->name?>" alt="<?=$supports->name?>" style="height: 100px;margin-left: 10px;" src="<?php echo base_url('upload/logo/'.$supports->image_link)?>"/>
+        <img title="<?=$supports->name?>" alt="<?=$supports->name?>" style="height: 100px;" src="<?php echo base_url('upload/logo/'.$supports->image_link)?>"/>
     </a>
     <h1><?=$supports->name?></h1>
 </div>

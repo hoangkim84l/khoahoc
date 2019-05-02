@@ -16,7 +16,7 @@
 </div>
 </div>
 </div>
-<div class="container marg50">
+<div class="container marg100">
  <div class="row">
   <div class="col-lg-12">
   <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>

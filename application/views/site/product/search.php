@@ -18,16 +18,16 @@
     <div class="product">
       <a id="c648"></a>
       <div id="c78" class="csc-default">
-        <div class="tx-fetextimage-pi3">
+        <!-- <div class="tx-fetextimage-pi3">
           <h1><img title="Products" alt="Products" src="fileadmin/textimage/Headline_Blue_19px/068f80c7519d0528fb08e82137a72131.png"  /></h1>
-        </div>
+        </div> -->
       </div>
       <a id="c1774"></a>
       <?php foreach($list as $row):?>
         <div id="c79" class="csc-default">
           <div class="csc-textpic csc-textpic-center csc-textpic-above">
-            <div class="csc-textpic-imagewrap csc-textpic-single-image" style="width:278px;">
-              <img src="<?php echo base_url('upload/product/'.$row->image_link)?>" width="320" height="210" alt="<?php echo $row->name?>" style="float: left;" /></div>
+            <div class="csc-textpic-imagewrap csc-textpic-single-image" style="width:340px;">
+              <img src="<?php echo base_url('upload/product/'.$row->image_link)?>" class="img-rounded" width="304" height="236" style="margin: 0 auto;"  alt="<?php echo $row->name?>"/></div>
               <div class="csc-textpic-text">
                 <p class="bodytext"><span style="font-weight: bold;"></span>
                 </p>

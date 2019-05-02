@@ -15,8 +15,8 @@
 	var public_url 	= '';
 </script>
 
-<script type="text/javascript" src="<?php echo public_url()?>/js/jquery/jquery.min.js"></script>
-<script type="text/javascript" src="<?php echo public_url()?>/js/jquery/jquery-ui.min.js"></script>
+<script type="text/javascript" src="<?php echo public_url()?>js/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="<?php echo public_url()?>js/jquery/jquery-ui.min.js"></script>
 
 <script type="text/javascript" src="<?php echo public_url('admin/crown') ?>/js/plugins/spinner/jquery.mousewheel.js"></script>
 
