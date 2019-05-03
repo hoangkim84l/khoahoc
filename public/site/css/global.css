@@ -8,7 +8,6 @@ a:visited {text-decoration: none;color: #189DD9;}
 a:hover {text-decoration: none;color: #D32021;}
 a:active {text-decoration: none;color: #189DD9;}
 .clear { clear:both; height:0; overflow:hidden;}
-img { display:block; border:0;}
 .mb { margin-bottom:10px;}
 .mr { margin-right:10px;}
 .border { border:10px solid #fff;}
@@ -18,7 +17,7 @@ h1,h2,h5{ font-weight:normal;}
 h2 { font-size:16px;}
 select,textarea {font-family:Helvetica, Verdana, Arial;font-size: 11px;}
 /*===layout===*/
-#layout { width:920px; margin:0 auto; padding:0 20px 0 40px;overflow:hidden;}
+#layout { width:920px; margin:0 auto; padding:0;overflow:hidden;}
 
 /*#mainCon { width:550px; float:left; }*/
 #mainCon { float:left; }
@@ -47,11 +46,15 @@ select,textarea {font-family:Helvetica, Verdana, Arial;font-size: 11px;}
 #languageList li { float:left; width:100%;height:20px; line-height:20px;padding-left:6px; list-style:none;color:#189DD9;}
 #languageList li a { display:block; height:20px; line-height:20px;}
 
-#logo {width:251px; height:50px;margin-bottom:56px;clear:both; /*background:url(../../images/logo.gif) no-repeat 0 0;*/}
+#logo img {
+  min-height:100px;
+  height:100px;
+  background:gray;
+}
 #logo h1{ display:none;}
 
 /*===navigation===*/
-#navigation { background:#01ace0 url(../../images/navBg.jpg) no-repeat 0 0; height:40px;margin-left: 10px;width: 840px;}
+#navigation { background:#01ace0}
 .navigation li { float:left; position:relative;width:110px; display:inline; /*overflow:hidden;*/ height:40px; z-index:30;}
 .navigation li:hover > div { visibility:visible !important;}
 .navigation li a {float:left; height:40px;line-height:40px; font-size:16px; color:#fff; text-align:center; background:url(../../images/navBg-hover.gif) no-repeat; background-position:0 40px;}
@@ -81,7 +84,7 @@ select,textarea {font-family:Helvetica, Verdana, Arial;font-size: 11px;}
 #subMenu40 a {width:100%;background-position:-617px 40px;}
 #subMenu40:hover a, #subMenu40.active a{background-position:-617px 0;}
 #subMenu40 a.current, #subMenu40:hover a.current {background-position:-617px -40px;}
-#subMenu509 {width:112px;}
+
 #subMenu509 a {width:100%;background-position:-617px 40px;}
 #subMenu509:hover a, #subMenu509.active a{background-position:-617px 0;}
 #subMenu509 a.current, #subMenu509:hover a.current {background-position:-617px -40px;}
@@ -172,7 +175,6 @@ table.contenttable-100 td:last-child  { width: 40%; }
 
 /*===subNav===*/
 #navigation ul { list-style:none;}
-#navigation ul li {z-index:601;}
 #navigation .subNav li {z-index:603;}
 #navigation ul li .subNav { position:absolute; left:0px;top:40px; z-index:602; visibility:hidden; }
 

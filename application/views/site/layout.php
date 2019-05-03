@@ -13,12 +13,11 @@
         </a>
     </div> -->
 	<div id="layout">		
-		<header>
+		<!-- <header>
 			<?php $this->load->view('site/header')?>
-		</header>	
-		<div id="navigation" class="mb">
-			<?php $this->load->view('site/addthis')?>
-		</div>
+		</header>	 -->
+		<?php $this->load->view('site/addthis')?>
+		
 		<div id="main" class="mb">
 			<?php if(isset($message)):?>
 				<h3 style="color:red"><?php echo $message?></h3>

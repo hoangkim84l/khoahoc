@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 .soc-contacts li{
 	list-style: none;
     float: left;
@@ -45,18 +48,14 @@ a{
   /*background-color: #f1f1f1;*/
 }
 
-@media only screen 
-and (min-device-width : 375px) 
+@media only screen  
 and (max-device-width : 667px) {
   #layout{
     width: auto;
-    margin: unset;
-    padding: unset;
+    margin: 0;
+    padding: 0;
   }
-  #navigation{
-    width: auto;
-    margin-left: 0px;
-  }
+  
   #menu li a {
     background: #000 !important;
   }
@@ -66,10 +65,14 @@ and (max-device-width : 667px) {
   }
   #rightBot,#sidebox{width:385px;}
 }
+
+#logo{
+    height: 100%;
+    width:auto;
+}
+
 .current{
     background: red;
-    height: 40px !important;
-    line-height: 40px !important;
 }
 .fb_customer_chat_bubble_animated_no_badge{
     right: 8pt !important;
@@ -80,28 +83,34 @@ and (max-device-width : 667px) {
 }
 /*Strip the ul of padding and list styling*/
 #menu {
-    list-style-type:none;
-    margin:0;
-    padding:0;
-    position: absolute;
+    height:60px;
+    display: grid;
+    grid-template-columns:120px 120px 120px 120px 120px 120px auto 200px;
+    overflow: hidden;
 }
 /*Create a horizontal list with spacing*/
 #menu li {
     display:inline-block;
-    float: left;
     margin-right: 1px;
 }
 /*Style for menu links*/
-#menu li a {
+#menu a {
     display:block;
-    min-width:140px;
-    height: 50px;
     text-align: center;
-    line-height: 40px;
+    line-height: 60px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #fff;
     /*background: #2f3036;*/
     text-decoration: none;
+    font-size:17px;
+}
+
+#form-global-search{
+    padding:8px 6px 8px 0;
+}
+
+#form-global-search > input {
+    height: 100%;
 }
 /*Hover state for top level links*/
 #menu li:hover a {
@@ -147,12 +156,6 @@ ul li:hover  ul a:hover {
 }
 /*Style 'show menu' label button and hide it by default*/
 .show-menu {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-decoration: none;
-    color: #fff;
-    background: #19c589;
-    text-align: center;
-    padding: 10px 0;
     display: none;
 }
 /*Hide checkbox*/
@@ -164,10 +167,64 @@ input[type=checkbox]:checked ~ #menu{
     display: block;
 }
 /*Responsive Styles*/
-@media screen and (max-width : 760px){
+@media screen and (max-width : 920px){
+    #layout {
+        width: auto;
+    }
+
+    #navigation{
+        width: 100vw;
+        height: 100vh;
+        margin-left: 0px;
+        background-color: rgba(0,0,0,0.6);
+        position: fixed;
+        top:0;
+        left:-100vw;
+        z-index: 99999;
+    }
+
+    /*Display 'show menu' link*/
+    #show-menu:checked ~ #navigation {
+        left:0;   
+    }
+
+    #show-menu:checked ~ #navigation > .show-menu{
+        right:unset;
+        left:200px;
+    }
+
+    .show-menu {
+        display:inline-block;
+        position: absolute;
+        background: gray;
+        height:50px;
+        width:50px;
+        padding:10px;
+        top:5px;
+        right:-50px;
+        border-top-right-radius:5px;
+        border-bottom-right-radius:5px;
+    }
+
+    .show-menu > span{
+        display: block;
+        height:2px;
+        margin-bottom:10px;
+        background-color: white;
+    }
+
+    /*Make dropdown links appear inline*/
+    #menu {
+        height: auto;
+        width:200px;
+        background-color: #01ace0;
+        display:inline-block;
+        height:100%;
+    }
+
     .row{
-        margin-right: unset !important;
-        margin-left: unset !important;
+        margin-right: initial !important;
+        margin-left: initial !important;
     }
     .col-xs-6{
         padding-left: 5px !important;
@@ -180,11 +237,7 @@ input[type=checkbox]:checked ~ #menu{
     .call-now{
         display: block;
     }
-    /*Make dropdown links appear inline*/
-    #menu {
-        position: static;
-        display: none;
-    }
+    
     /*Create vertical spacing*/
     #menu li {
         margin-bottom: 1px;
@@ -193,10 +246,9 @@ input[type=checkbox]:checked ~ #menu{
     #menu li, li a {
         width: 100%;
     }
-    /*Display 'show menu' link*/
-    .show-menu {
-        display:block;
-    }
+    
+
+
     .custom-search{  
         width: 100% !important;
         margin-left: 1px !important;
@@ -325,12 +377,8 @@ input[type=checkbox]:checked ~ #menu{
     position: relative;
     font-family: Tahoma, Arial, self-serif !important
 }
- 
-@media screen and (min-width: 1px) and (max-width: 500px) {
-    #calltrap-overlay .b-calltrap__container {
-        width: 290px
-    }
-}
+
+
  
 #calltrap-overlay .b-calltrap__close {
     display: block;
@@ -815,5 +863,11 @@ input[type=checkbox]:checked ~ #menu{
         -moz-transform: rotate(0deg);
         -o-transform: rotate(0deg);
         transform: rotate(0deg)
+    }
+}
+
+@media screen and (min-width: 1px) and (max-width: 500px) {
+    #calltrap-overlay .b-calltrap__container {
+        width: 290px
     }
 }
