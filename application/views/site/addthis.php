@@ -6,7 +6,7 @@
         <span></span>
     </label>
     <div id="menu">
-        <a href="<?=site_url()?>">
+        <a id="a-logo" href="<?=site_url()?>">
             <img id="logo" title="<?=$supports->name?>" alt="<?=$supports->name?>" src="<?php echo base_url('upload/logo/'.$supports->image_link)?>"/>
         </a>
         <a href="<?php echo base_url()?>" class="homepage" onfocus="blurLink(this);" class="current">Trang chủ</a>

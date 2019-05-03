@@ -346,7 +346,7 @@ margin-right:10px;color:#fff;}
 .banner-pagination a { position:static !important; width:10px !important; height:10px !important; float:none; display:inline-block;zoom:1;*display:inline;margin-left:5px; background:url(../../images/bullets.png) no-repeat left center; font-size:0 !important;}
 .banner-pagination a.active-item { background:url(../../images/bullets.png) no-repeat center center;}
 /*===footer===*/
-#footer { height:30px; background:#189dd9; color:#fff; line-height:30px; margin-bottom:35px; margin-top:10px; clear:both; white-space:nowrap; position:relative;}
+#footer { height:30px; background:#189dd9; color:#fff; line-height:30px; margin-bottom:0px; margin-top:0px; clear:both; white-space:nowrap; position:relative;}
 #footer a { color:#fff; text-decoration:underline;}
 #footer p, #footer ul{ float:left; display:inline; overflow:hidden;}
 #footer ul { list-style:none;}
