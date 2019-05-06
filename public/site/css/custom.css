@@ -7,14 +7,12 @@ html > body{
 }
 
 #footer {
-    bottom: 0;
     display: grid;
     grid-template-columns: auto 60px;
     height:40px;
     align-items: center;
     background-color: #01ace0;
     color:white;
-    -webkit-transform: translateZ(0);
 }
 
 
@@ -388,6 +386,10 @@ input[type=checkbox]:checked ~ #menu{
         height: 60px;
         position: fixed;
         right:0;
+    }
+
+    #footer{
+        bottom:0;
     }
 
     #footer .global-info:before {
