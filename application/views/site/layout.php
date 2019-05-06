@@ -84,4 +84,34 @@
           });
         }
 	</script>
+	<script>
+
+  function PreloadImage(container){
+      var imgUrl = container.getAttribute("data-preload-image-url");
+      var fakeImage = new Image();
+      fakeImage.onload = function(a){
+        console.log(fakeImage.src + " success");
+        container.appendChild(fakeImage);
+        container.setAttribute("data-preload-status","");
+      }
+
+      fakeImage.onerror  = function(){
+        console.log(fakeImage.src + " fail");
+        container.setAttribute("data-preload-status","2")
+      }
+
+      fakeImage.src  = imgUrl;
+   
+  }
+
+  function PreparePreloadImage(){
+    var listContainerImages = document.querySelectorAll("*[data-preload-image-url]");
+    for(var i = 0; i < listContainerImages.length;i++){
+      PreloadImage(listContainerImages[i]);
+    }
+  }
+
+
+  PreparePreloadImage();
+</script>
 </html>

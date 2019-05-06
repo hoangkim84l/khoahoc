@@ -3,7 +3,6 @@
     <div id="mobile-navigation">
         <form class="form-global-search" action="<?php echo site_url('product/search')?>" method="get">
             <input type="text" aria-haspopup="true" aria-autocomplete="list" role="textbox" autocomplete="off" class="form-control ui-autocomplete-input" placeholder="Tìm kiếm sản phẩm..." value="<?php echo isset($key) ? $key : ''?>" name="key-search" id="text-search">
-            
         </form>
 
         <label for="show-menu" class="show-menu">

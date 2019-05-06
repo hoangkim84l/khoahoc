@@ -8,8 +8,7 @@
         <ul id="bannerList">
             <?php foreach($slide_lists as $slide_list):?>
             <li>
-                <img class="img-responsive"  
-                     
+                <img class="img-responsive"   
                      id="tx_mwimagemap_img_1" 
                      usemap="#map_1" 
                      alt="DWK- Duran Wheaton Kimble" 

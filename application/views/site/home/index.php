@@ -9,9 +9,8 @@
     <div class="product-wrapper">
       <a href="<?=site_url('san-pham/chi-tiet/'.$row->slug_name.'-'.$row->id)?>" class="internal-link">
         <div class="product">
-            <div class="product-img" style="background-image:url('<?php echo base_url('upload/product/'.$row->image_link)?>')">
-          
-            </div>
+            <div class="product-img" 
+                data-preload-image-url="<?php echo base_url('upload/product/'.$row->image_link)?>"></div>
             <div class="product-des">
               <p class="title"><?=$row->name?></p>
             </div>
