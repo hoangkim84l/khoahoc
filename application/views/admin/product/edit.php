@@ -124,7 +124,7 @@
 
 
 <!-- warranty -->
-<div class="formRow">
+<!-- <div class="formRow">
 	<label for="param_warranty" class="formLeft">
 		Bảo hành :
 	</label>
@@ -134,10 +134,10 @@
 		<div class="clear error" name="warranty_error"></div>
 	</div>
 	<div class="clear"></div>
-</div>
+</div> -->
 
 <div class="formRow">
-	<label for="param_sale" class="formLeft">Tặng quà:</label>
+	<label for="param_sale" class="formLeft">Mô tả ngắn:</label>
 	<div class="formRight">
 		<span class="oneTwo"><textarea cols="" rows="4" id="param_gifts" name="gifts"><?php echo $product->gifts?></textarea></span>
 		<span class="autocheck" name="sale_autocheck"></span>

@@ -515,6 +515,18 @@ input[type=checkbox]:checked ~ #menu{
 }
 
 @media screen and (max-width : 720px) {
+    /*resposive product*/
+    #product-container {
+        display: block;
+    }
+
+    .product-category-part {
+        min-height: 120px
+    }
+
+    #menuTree li {
+        float: initial !important;
+    }
     .top-product-container {
         grid-template-areas: "a a";
         grid-auto-columns: 2fr;

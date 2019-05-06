@@ -2,7 +2,7 @@
  <div class="container">
   <div class="row">
    <div class="col-lg-6 pull-left"><div class="page-in-bread"><span><h3>Dịch vụ</h3></span> </div></div>
-   <div class="col-lg-6 pull-right"><div class="page-in-bread"><span>Bạn đang ở đây:</span> <a href="<?php echo base_url()?>">Trang chủ</a> \ Dịch vụ</div></div>
+   
  </div>
 </div>
 </div><br/>

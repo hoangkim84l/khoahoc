@@ -1,21 +1,16 @@
-<div class="page-in">
- <div class="container">
-  <div class="row">
-    <div class="col-lg-6 pull-left"><div class="page-in-name">Liên hệ : <span>Cần chúng tôi hổ trợ!</span></div></div>
-   <div class="col-lg-6 pull-right"><div class="page-in-bread"><span>Bạn đang ở đây:</span> <a href="#">Trang chủ</a> \ Liên hệ</div></div>
- </div>
-</div>
-</div>
+<br/>
 <div class="container marg75">
- <div class="row">
-  <div class="col-lg-12">
-   <div class="promo-block">
-    <div class="promo-text">Tìm chúng tôi ở đâu ?</div>
-    <div class="center-line"></div>
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="promo-block">
+        <div class="promo-text">Tìm chúng tôi ở đâu ?</div>
+        <div class="center-line"></div>
+      </div>
+    </div>
   </div>
 </div>
-</div>
-</div>
+<br/>
+
 <div class="container marg100">
  <div class="row">
   <div class="col-lg-12">

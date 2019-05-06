@@ -43,7 +43,7 @@ Class Product extends MY_Controller
     
         // Hien thi view
         $this->data['temp'] = 'site/product/index';
-        $this->load->view('site/layout', $this->data);
+        $this->load->view('site/layout-product', $this->data);
     }
     
     /*
@@ -118,7 +118,7 @@ Class Product extends MY_Controller
         
         //hiển thị ra view
         $this->data['temp'] = 'site/product/catalog';
-        $this->load->view('site/layout', $this->data);
+        $this->load->view('site/layout-product', $this->data);
     }
     
     /*
@@ -150,7 +150,7 @@ Class Product extends MY_Controller
 
         //hiển thị ra view
         $this->data['temp'] = 'site/product/view';
-        $this->load->view('site/layout', $this->data);
+        $this->load->view('site/layout-product', $this->data);
     }
     
     /*
@@ -190,7 +190,7 @@ Class Product extends MY_Controller
 
             //load view
             $this->data['temp'] = 'site/product/search';
-            $this->load->view('site/layout', $this->data);
+            $this->load->view('site/layout-product', $this->data);
         }
     }
     /**
@@ -213,7 +213,7 @@ Class Product extends MY_Controller
         $this->data['message'] = $message;
         
         $this->data['temp'] = 'site/product/newest';
-        $this->load->view('site/layout', $this->data);
+        $this->load->view('site/layout-product', $this->data);
     }
     /**
     * order by view hightest
@@ -235,75 +235,9 @@ Class Product extends MY_Controller
         $this->data['message'] = $message;
         
         $this->data['temp'] = 'site/product/viewest';
-        $this->load->view('site/layout', $this->data);
-    }
-    /*
-     * Tim kiem theo gia san pham
-     */
-    function search_price()
-    {
-        $price_from = intval($this->input->get('price_from'));
-        $price_to   = intval($this->input->get('price_to'));
-        $this->data['price_from'] = $price_from;
-        $this->data['price_to'] = $price_to;
-        
-        //loc theo gia
-        $input  = array();
-        $input['where'] = array('price >= ' => $price_from, 'price <=' => $price_to);
-        $list = $this->product_model->get_list($input);
-        $this->data['list'] = $list;
-        
-        //load view
-        $this->data['temp'] = 'site/product/search_price';
-        $this->load->view('site/layout', $this->data);
+        $this->load->view('site/layout-product', $this->data);
     }
     
-    /**
-     * Danh gia sản phẩm
-     */
-    function raty()
-    {
-        $result = array();
-    
-        // Lay thong tin
-        $id = $this->input->post('id');//lấy id sản phẩm gửi lên từ trang ajax
-        $id = (!is_numeric($id)) ? 0 : $id;
-        $info = $this->product_model->get_info($id);//lấy thông tin sản phẩm cần đánh giá
-        if (!$info)
-        {
-            exit();
-        }
-    
-        //kiem tra xem khach da binh chon hay chua
-        $raty    = $this->session->userdata('session_raty');
-        $raty   = (!is_array($raty)) ? array() : $raty;
-        $result = array();
-        //nếu đã tồn tại id sản phẩm này trong session đánh giá
-        if(isset($raty[$id]))
-        {
-            $result['msg'] = 'Bạn chỉ được đánh giá 1 lần cho sản phẩm này';
-            $output        = json_encode($result);//trả về mã json
-            echo $output;
-            exit();
-        }
-        //cap nhat trang thai da binh chon
-        $raty[$id] = TRUE;
-        $this->session->set_userdata('session_raty', $raty);
-    
-        $score = $this->input->post('score');//lấy số điểm post lên từ trang ajax
-        $data  = array();
-        $data['rate_total'] = $info->rate_total + $score;//tổng số điểm
-        $data['rate_count'] = $info->rate_count + 1;//tổng số lượt đánh giá
-        //cập nhật lại đánh gia cho sản phẩm
-        $this->product_model->update($id,$data);
-    
-        // Khai bao du lieu tra ve
-        $result['complete'] = TRUE;
-        $result['msg']      = 'Cám ơn bạn đã đánh giá cho sản phẩm này';
-        $output             = json_encode($result);//trả về mã json
-        echo $output;
-        exit();
-    }
 }
 
 
