@@ -25,18 +25,20 @@
 			<?php $this->load->view($temp , $this->data);?>
 			<div class="chat-facebook"><?php echo $supports->chat_facebook?></div>
 			<div class="chat-zalo"><?php echo $supports->chat_zalo?></div>
-			<div class="call-now">
+			<!-- <div class="call-now">
 				<a id="calltrap-btn" class="b-calltrap-btn calltrap_offline hidden-phone visible-tablet" href="tel:<?php echo $supports->hotline?>">
 			 		<div id="calltrap-ico" style=""></div>
 			 	</a>
-			</div>
+			</div> -->
 			<div class="clear"></div>
 		</div>	
-		<div id="footer">
+		<footer id="footer">
 			<?php $this->load->view('site/footer');?>
-		</div> 
+		</footer> 
 	</div>    
 </body>
+
+
 <script type="text/javascript">
 		if(window.location.pathname === "/dich-vu.html"){
 			$(".service").addClass("current");
@@ -67,8 +69,6 @@
 		if(secondLevelLocation === "dich-vu"){
 			$(".service").addClass("current");
 		}
-
-		
         var coll = document.getElementsByClassName("collapsible");
         var i;
 
