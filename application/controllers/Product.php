@@ -150,7 +150,7 @@ Class Product extends MY_Controller
 
         //hiển thị ra view
         $this->data['temp'] = 'site/product/view';
-        $this->load->view('site/layout-product', $this->data);
+        $this->load->view('site/layout', $this->data);
     }
     
     /*
