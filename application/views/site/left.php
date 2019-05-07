@@ -1,4 +1,10 @@
+<input type="checkbox" id="show-filter" />
 <div class="product-category-part">
+    <label for="show-filter" class="show-filter">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
     <ul id="menuTree">
         <li><strong class="collapsible">Sản phẩm</strong>
             <ul class="content">

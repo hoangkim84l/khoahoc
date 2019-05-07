@@ -323,9 +323,6 @@ div.ac_results ul li.over { background:#80D6F0; font-weight:normal;}
 
 #mainBanner_oneColumn { position:relative;}
 
-#mainBanner_oneColumn, #mainBanner_oneColumn ul li { height:300px; overflow:hidden;}
-#mainBanner_oneColumn ul { height:300px; overflow:hidden; list-style:none;}
-#mainBanner_oneColumn ul li { float:left;}
 #mainCon_oneColumn {font-size:0; line-height:0;width:1000px; float:left;}
 #mainCon_oneColumn .tx-feexhibition-pi1, #mainCon_oneColumn .tx-extteaserbox-pi1{float:left;}
 #mainCon_oneColumn:after { content:''; display:block; clear:both; visibility:hidden; height:0;}

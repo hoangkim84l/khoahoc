@@ -8,12 +8,9 @@
         <ul id="bannerList">
             <?php foreach($slide_lists as $slide_list):?>
             <li>
-                <a href="<?php echo $slide_list->link;?>" target="_blank">
-                    <img class="img-responsive"   
-                         id="tx_mwimagemap_img_1" 
-                         usemap="#map_1" 
-                         alt="<?php echo $slide_list->name;?>" 
-                         src="<?php echo base_url('upload/slide/'.$slide_list->image_link)?>" />
+                <a href="<?php echo $slide_list->link;?>" 
+                    target="_blank">
+                    <div class="img" data-preload-image-url="<?php echo base_url('upload/slide/'.$slide_list->image_link)?>"></div>
                 </a>
             </li>
             <?php endforeach;?>
