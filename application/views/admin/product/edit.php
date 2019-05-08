@@ -64,7 +64,7 @@
 </div> -->
 
 <!-- Price -->
-<div class="formRow">
+<!-- <div class="formRow">
 	<label for="param_price" class="formLeft">
 		Giá :
 		<span class="req">*</span>
@@ -80,7 +80,6 @@
 	<div class="clear"></div>
 </div>
 
-<!-- Price -->
 <div class="formRow">
 	<label for="param_discount" class="formLeft">
 		Giảm giá (VND) 
@@ -95,7 +94,7 @@
 		<div class="clear error" name="discount_error"></div>
 	</div>
 	<div class="clear"></div>
-</div>
+</div> -->
 
 
 <div class="formRow">

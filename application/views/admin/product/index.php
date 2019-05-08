@@ -17,7 +17,7 @@
 		
 		<table width="100%" cellspacing="0" cellpadding="0" id="checkAll" class="sTable mTable myTable">
 			
-			<thead class="filter"><tr><td colspan="6">
+			<thead class="filter"><tr><td colspan="5">
 				<form method="get" action="<?php echo admin_url('product')?>" class="list_filter form">
 					<table width="80%" cellspacing="0" cellpadding="0"><tbody>
 
@@ -62,7 +62,7 @@
 						<td style="width:21px;"><img src="<?php echo public_url('admin/images')?>/icons/tableArrows.png"></td>
 						<td style="width:60px;">Mã số</td>
 						<td>Tên</td>
-						<td>Giá</td>
+						<!-- <td>Giá</td> -->
 						<td style="width:75px;">Ngày tạo</td>
 						<td style="width:120px;">Hành động</td>
 					</tr>
@@ -70,7 +70,7 @@
 
 				<tfoot class="auto_check_pages">
 					<tr>
-						<td colspan="6">
+						<td colspan="5">
 							<div class="list_action itemActions">
 								<a url="<?php echo admin_url('product/delete_all')?>" class="button blueB" id="submit" href="#submit">
 									<span style="color:white;">Xóa hết</span>
@@ -107,7 +107,7 @@
 
 							</td>
 
-							<td class="textR">
+							<!-- <td class="textR">
 								<?php if($row->discount > 0):?>
 									<?php $price_new = $row->price - $row->discount;?>
 									<b style="color:red"><?php echo number_format($price_new)?> đ</b>
@@ -115,7 +115,7 @@
 									<?php else:?>
 										<b style="color:red"><?php echo number_format($row->price)?> đ</b>
 									<?php endif;?>   				
-								</td>
+								</td> -->
 
 								<td class="textC"><?php echo get_date($row->created)?></td>
 

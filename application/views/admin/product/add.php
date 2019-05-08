@@ -56,7 +56,7 @@
 </div> -->
 
 <!-- Price -->
-<div class="formRow">
+<!-- <div class="formRow">
 	<label for="param_price" class="formLeft">
 		Giá :
 		<span class="req">*</span>
@@ -72,7 +72,6 @@
 	<div class="clear"></div>
 </div>
 
-<!-- Price -->
 <div class="formRow">
 	<label for="param_discount" class="formLeft">
 		Giảm giá (VND) 
@@ -88,7 +87,7 @@
 	</div>
 	<div class="clear"></div>
 </div>
-
+ -->
 
 <div class="formRow">
 	<label for="param_cat" class="formLeft">Thể loại:<span class="req">*</span></label>

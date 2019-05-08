@@ -16,7 +16,7 @@ Class Home extends MY_Controller
 		$this->load->model('product_model');
 		$input = array();
 		$input['limit'] = array(6, 0);	    
-		$input['order'] = array('view', 'DESC');
+		$input['order'] = array('created', 'DESC');
 		$maxView = $this->product_model->get_list($input);
 		$this->data['maxView']  = $maxView;
 

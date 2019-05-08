@@ -114,7 +114,6 @@ Class Product extends MY_Controller
         {
             $this->form_validation->set_rules('name', 'Tên', 'required');
             $this->form_validation->set_rules('catalog', 'Thể loại', 'required');
-            $this->form_validation->set_rules('price', 'Giá', 'required');
             
             //nhập liệu chính xác
             if($this->form_validation->run())
@@ -122,12 +121,12 @@ Class Product extends MY_Controller
                 //them vao csdl
                 $name        = $this->input->post('name');
                 $catalog_id  = $this->input->post('catalog');
-                $price       = $this->input->post('price');
-                $price       = str_replace(',', '', $price);
+                $price       = 0;
+                $price       = 0;
                 
 
-                $discount = $this->input->post('discount');
-                $discount = str_replace(',', '', $discount);
+                $discount = 0;
+                $discount = 0;
                 
                 
                 //lay ten file anh minh hoa duoc update len
@@ -148,10 +147,10 @@ Class Product extends MY_Controller
                 $data = array(
                     'name'       => $name,
                     'catalog_id' => $catalog_id,
-                    'price'      => $price,
+                    'price'      => '0',
                     'image_link' => $image_link,
                     'image_list' => $image_list,
-                    'discount'   => $discount,
+                    'discount'   => '0',
                     'warranty'   => 'không',
                     'gifts'      => $this->input->post('gifts'),
                     'site_title' => $this->input->post('site_title'),
@@ -223,7 +222,6 @@ Class Product extends MY_Controller
         {
             $this->form_validation->set_rules('name', 'Tên', 'required');
             $this->form_validation->set_rules('catalog', 'Thể loại', 'required');
-            $this->form_validation->set_rules('price', 'Giá', 'required');
         
             //nhập liệu chính xác
             if($this->form_validation->run())
@@ -231,11 +229,11 @@ Class Product extends MY_Controller
                 //them vao csdl
                 $name        = $this->input->post('name');
                 $catalog_id  = $this->input->post('catalog');
-                $price       = $this->input->post('price');
-                $price       = str_replace(',', '', $price);
+                $price       = '0';
+                $price       = 0;
                
-                $discount = $this->input->post('discount');
-                $discount = str_replace(',', '', $discount);
+                $discount = '0';
+                $discount = 0;
                 
                 //lay ten file anh minh hoa duoc update len
                 $this->load->library('upload_library');
