@@ -37,6 +37,7 @@ html > body{
 .chat-zalo>.zalo-chat-widget{
     top:unset !important;
     bottom:60px !important;
+    left: 0;
 }
 
 .soc-contacts li{
