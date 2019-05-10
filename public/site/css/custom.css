@@ -6,6 +6,11 @@ p{
     line-height: 22px;
 }
 
+#c6282{
+    border: 10px solid white;
+    overflow: hidden;
+}
+
 html > body{
     background-color: #ecf7fd;
 }
@@ -53,6 +58,10 @@ a{
     position: relative;
 }
 
+#main{
+    margin-top:10px;
+}
+
 .custom-title{
 	overflow: hidden;
     text-overflow: ellipsis;
@@ -93,10 +102,11 @@ a{
 }
 
 #bannerList{
-    height: 300px;
+    height: 280px;
     width:100%;
     overflow: hidden;
     list-style: none;
+    margin:0;
 }
 
 #bannerList li {
@@ -156,6 +166,9 @@ a{
 .product-des > .title {
     font-size: 16px;
     font-weight: bold;
+    line-height: 22px;
+    max-height: 66px;
+    overflow: hidden;
 }
 
 .current{
@@ -378,7 +391,6 @@ input[type=checkbox]:checked ~ #menu{
     margin: 10px 0;
     display: flex;
     overflow: hidden;
-    background: #fff;
 }
 
 .page-in-name>a{
@@ -400,6 +412,11 @@ input[type=checkbox]:checked ~ #menu{
     border-bottom-left-radius: 4px;
 }
 
+.page-in-name>a:last-child>span {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
 .page-in-name>a>span{
     display: inline-block;
     font-size: 13px;
@@ -407,7 +424,7 @@ input[type=checkbox]:checked ~ #menu{
     line-height: 40px;
     height: 40px;
     white-space: nowrap;
-    padding:0 4px;
+    padding:0 8px;
     
 }
 
@@ -750,6 +767,7 @@ input[type=checkbox]:checked ~ #menu{
 
     .single-product-wrapper>.img-container{
         width:auto;
+        min-height: 80px;
     }
 
     .single-product-wrapper>.info.product-info {
