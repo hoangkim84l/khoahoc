@@ -559,6 +559,9 @@ input[type=checkbox]:checked ~ #menu{
     left:calc(50% - 25px);
 }
 
+.container-contact{
+    margin-top: 20px;
+}
 /*Responsive Styles*/
 
 @media screen and (max-width : 920px){

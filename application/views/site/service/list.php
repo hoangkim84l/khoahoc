@@ -1,12 +1,12 @@
-<div class="page-in">
+<div class="container-contact">
  <div class="container">
   <div class="row">
-   <div class="col-lg-6 pull-left"><div class="page-in-bread"><span><h3>Dịch vụ</h3></span> </div></div>
+   <div class=""><div class="page-in-bread"><span><h3>Dịch vụ</h3></span> </div>
+   </div>
    
  </div>
 </div>
-</div><br/>
-<div class="container-fluid text-center">    
+<div class="container-contact">    
   <div class="row content">
    
     <div class="col-lg-8 col-sm-12 col-md-8 text-left"> 

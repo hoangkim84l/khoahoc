@@ -1,5 +1,4 @@
-<br/>
-<div class="container marg75">
+<div class="container-contact">
   <div class="row">
     <div class="col-lg-12">
       <div class="promo-block">
@@ -9,9 +8,8 @@
     </div>
   </div>
 </div>
-<br/>
 
-<div class="container marg100">
+<div class="container-contact">
  <div class="row">
   <div class="col-lg-12">
   <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
@@ -22,7 +20,7 @@
    </div> 
 </div>
 </div>  
-<div class="container marg100">
+<div class="container-contact">
  <div class="row">
   <div class="col-lg-6 col-md-6 col-sm-6">
    <div class="promo-block">
