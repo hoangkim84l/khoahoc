@@ -107,7 +107,7 @@ a{
     overflow: hidden;
     list-style: none;
     margin:0;
-}
+    }
 
 #bannerList li {
     width: 100%;
@@ -562,6 +562,22 @@ input[type=checkbox]:checked ~ #menu{
 .container-contact{
     margin-top: 20px;
 }
+    
+.container-service{     
+    margin-top: 20px;
+    background: #fff;
+    padding: 5px 10px;
+}
+
+.row-header-service{
+    margin-left: 10px;
+}
+
+.introduction{
+    background-color: #fff;
+    padding: 5px 10px;
+}
+
 /*Responsive Styles*/
 
 @media screen and (max-width : 920px){

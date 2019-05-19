@@ -1,14 +1,8 @@
-<div class="container-contact">
- <div class="container">
-  <div class="row">
-   <div class=""><div class="page-in-bread"><span><h3>Dịch vụ</h3></span> </div>
-   </div>
-   
- </div>
+<div class="container-service">
+   <div class="row-header-service"><div class="page-in-bread"><span><h3>Dịch vụ</h3></span> </div>
 </div>
-<div class="container-contact">    
-  <div class="row content">
-   
+<div class="container-service">    
+  <div class="row">
     <div class="col-lg-8 col-sm-12 col-md-8 text-left"> 
       <?php foreach($list as $service):?>
         <h4><a href="<?=site_url('dich-vu/chi-tiet/'.$service->slug_title.'-'.$service->id)?>"><?php echo $service->title?></a></h4>
