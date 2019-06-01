@@ -99,12 +99,16 @@
        <li class="support">
          <a href="" class="exp inactive">
             <span>Hỗ trợ và liên hệ</span>
-            <strong>2</strong>
+            <strong>3</strong>
          </a>
          <ul style="display: none;" class="sub">
             <li>
                <a href="<?php echo admin_url('support')?>">
                Hỗ trợ </a>
+            </li>
+            <li>
+               <a href="<?php echo admin_url('storeaddress')?>">
+               Địa chỉ chi nhánh </a>
             </li>
             <li>
                <a href="<?php echo admin_url('contact')?>">

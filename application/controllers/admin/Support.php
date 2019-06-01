@@ -116,6 +116,9 @@ class Support extends MY_Controller {
 			{
 				$image_banner = $upload_data_banner['file_name'];
 			}
+			$more_address = array();
+			$more_address_post_form = $this->input->post('more_address[]');
+			$more_address = json_encode($more_address_post_form);
             //lay du lieu ma admin nhap vao form
             $data = array();
             $data['name']       = $this->input->post('name');//ten hỗ trợ
@@ -126,6 +129,7 @@ class Support extends MY_Controller {
             
 			$data['hotline']    = $this->input->post('hotline');
 			$data['address']    = $this->input->post('address');
+			$data['more_address']    = $more_address;
 			
 			$data['meta_key']   = $this->input->post('meta_key');
 			$data['meta_desc']  = $this->input->post('meta_desc');

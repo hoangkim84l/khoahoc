@@ -20,8 +20,17 @@
            <li><i class="icon-videocam"></i> Zalo : <?php echo $supports->zalo?></li>
            <li><i class="icon-mail"></i> E-mail: <a href="mailto:<?php echo $supports->gmail?>"><?php echo $supports->gmail?></a></li>
          </ul> 
-      </div>
+      <hr>
+      <p>Địa chỉ chi nhánh</p>
+      <?php foreach($address_list as $row):?>
+        <ul class="contact-footer" style="text-align: left;list-style: none;">
+           <li><i class="icon-location"></i> Địa chỉ : <?php echo $row->address?></li>
+           <li><i class="icon-mobile"></i><a href="tel:<?php echo $row->phone?>"><?php if($row->phone != ''){ echo " Điện thoại : ".$row->phone;}?></a></li>
+           <li><i class="icon-inbox"></i><a href="tel:<?php echo $row->hotline?>?>"><?php if($row->hotline != ""){ echo " Hotline : ". $row->hotline;}?></a></li>
+         </ul> 
       
+      <?php endforeach ?>  
+      </div><br/>
     </div>
   </div>
 </div>

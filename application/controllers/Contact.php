@@ -13,7 +13,8 @@ class Contact extends MY_Controller
        $this->load->library('form_validation');
        
        //load file model
-   	  $this->load->model('contact_model');
+      $this->load->model('contact_model');
+   	  $this->load->model('Storeaddress_model');
    	  
    }
    

@@ -64,6 +64,15 @@ Class MY_Controller extends CI_Controller
                     //gui bien sang view
                     $this->data['supports'] = $supports;
                     
+                    //load model địa chỉ chi nhánh
+                    $this->load->model('Storeaddress_model');
+                    $input = array();
+                    $input['limit'] = array(15, 0);
+                    $address_list = $this->Storeaddress_model->get_list($input);
+                    //gui bien sang view
+                    $this->data['address_list'] = $address_list;
+
+
                     //goi toi thu vien
                     $this->load->library('cart');
                     $this->data['total_items']  = $this->cart->total_items();
