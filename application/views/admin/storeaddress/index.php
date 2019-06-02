@@ -27,7 +27,7 @@
 					<td style="width:21px;"><img src="<?php echo public_url('admin/images')?>/icons/tableArrows.png"></td>
 					<td style="width:60px;">Mã số</td>
 					<td>Số điện thoại</td>
-					<td>Hotline</td>
+					<td>Email</td>
 					<td>Địa chỉ</td>
 					<td style="width:75px;">Ngày tạo</td>
 					<td style="width:120px;">Hành động</td>
@@ -61,7 +61,7 @@
 						</a>
 					</td>
 					<td>
-						<?php echo $row->hotline?>
+						<?php echo $row->email?>
 					</td>
 					<td>
 						<?php echo $row->address?>

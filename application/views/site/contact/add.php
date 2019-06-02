@@ -60,7 +60,7 @@
               <ul class="contact-footer">
                  <li><i class="icon-location"></i> Địa chỉ : <?php echo $row->address?></li>
                  <li><i class="icon-mobile"></i><a href="tel:<?php echo $row->phone?>"><?php if($row->phone != ''){ echo " Điện thoại : ". $row->phone;}?></a></li>
-                 <li><i class="icon-inbox"></i><a href="tel:<?php echo $row->hotline?>?>"><?php if($row->hotline != ""){ echo " Hotline : ". $row->hotline;}?></a></li>
+                 <li><i class="icon-inbox"></i><a href="mailto:<?php echo $row->email?>"><?php if($row->email != ""){ echo " Email : ". $row->email;}?></a></li>
               </ul>
            </div> 
         </div>

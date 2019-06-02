@@ -25,9 +25,9 @@
                      <div class="clear"></div>
                   </div>
                   <div class="formRow">
-                     <label for="param_name" class="formLeft">Hotline</label>
+                     <label for="param_name" class="formLeft">Email</label>
                      <div class="formRight">
-                        <span class="oneTwo"><input type="text" _autocheck="true" id="param_hotline" name="hotline"></span>
+                        <span class="oneTwo"><input type="text" _autocheck="true" id="param_email" name="email"></span>
                         <span class="autocheck" name="name_autocheck"></span>
                         <div class="clear error" name="name_error"></div>
                      </div>
@@ -37,7 +37,7 @@
                   <div class="formRow">
                      <label for="param_name" class="formLeft">Địa chỉ <span class="req">*</span></label>
                      <div class="formRight">
-                        <span class="oneTwo"><input type="text" _autocheck="true" id="param_address" name="address"></span>
+                        <span class="oneTwo"><input type="text" _autocheck="true" id="param_address" name="address" required="true"></span>
                         <span class="autocheck" name="name_autocheck"></span>
                         <div class="clear error" name="name_error"></div>
                      </div>

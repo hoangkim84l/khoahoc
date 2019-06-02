@@ -83,7 +83,7 @@ Class Storeaddress extends MY_Controller
                 //luu du lieu can them
                 $data = array(
                     'phone'      => $this->input->post('phone'),
-                    'hotline'      => $this->input->post('hotline'),
+                    'email'      => $this->input->post('email'),
                     'address'    => $this->input->post('address'),
                     'created'    => now(),
                 ); 
@@ -137,7 +137,7 @@ Class Storeaddress extends MY_Controller
                  //luu du lieu can them
                 $data = array(
                     'phone'      => $this->input->post('phone'),
-                    'hotline'      => $this->input->post('hotline'),
+                    'email'      => $this->input->post('email'),
                     'address'    => $this->input->post('address'),
                     'created'    => now(),
                 ); 
